@@ -43,18 +43,8 @@
     min-height: 100vh;
   }
 
-  .screen-wrap {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem 4rem;
-  }
-
-  .form-card {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-  }
+  .screen-wrap { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+  .form-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
 
   .form-header {
     background: linear-gradient(135deg, #1e1e24 0%, #2a2a33 100%);
@@ -64,277 +54,79 @@
     gap: 2rem;
     border-bottom: 3px solid #C17F3A;
   }
-
-  .form-header-logo {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-  }
-
-  .form-header-text {
-    padding-left: 0.5rem;
-  }
-
-  .form-header-text h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #F7F2EB;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-  }
-
-  .form-header-text p {
-    font-size: 13px;
-    color: #C17F3A;
-    margin-top: 0.3rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-  }
+  .form-header-logo { display: flex; align-items: center; flex-shrink: 0; }
+  .form-header-text { padding-left: 0.5rem; }
+  .form-header-text h1 { font-size: 22px; font-weight: 700; color: #F7F2EB; line-height: 1.2; letter-spacing: 0.01em; }
+  .form-header-text p { font-size: 13px; color: #C17F3A; margin-top: 0.3rem; font-weight: 500; letter-spacing: 0.02em; }
 
   .form-body { padding: 2rem; }
 
-  /* ── PROGRESS ── */
   .progress-wrap { margin-bottom: 2rem; }
   .progress-top { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
   .progress-bar { height: 4px; background: var(--border); border-radius: 2px; }
   .progress-fill { height: 100%; background: #C17F3A; border-radius: 2px; transition: width 0.4s ease; }
   .progress-steps { display: flex; gap: 0; margin-top: 8px; }
-  .p-step {
-    flex: 1;
-    font-size: 10px;
-    text-align: center;
-    color: var(--text-light);
-    padding: 4px 2px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: color 0.2s;
-    line-height: 1.3;
-  }
+  .p-step { flex: 1; font-size: 10px; text-align: center; color: var(--text-light); padding: 4px 2px; border-radius: 4px; cursor: pointer; transition: color 0.2s; line-height: 1.3; }
   .p-step.done { color: #C17F3A; font-weight: 500; }
   .p-step.current { color: #8B5A1F; font-weight: 700; }
 
-  /* ── CONFIDENTIALITY NOTICE ── */
-  .conf-notice {
-    background: var(--green-light);
-    border: 1px solid var(--green-mid);
-    border-radius: var(--radius);
-    padding: 1rem 1.25rem;
-    margin-bottom: 1.75rem;
-    display: flex;
-    gap: 0.75rem;
-    align-items: flex-start;
-  }
-  .conf-icon {
-    width: 32px; height: 32px;
-    border-radius: 50%;
-    background: var(--green);
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
+  .conf-notice { background: var(--green-light); border: 1px solid var(--green-mid); border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 1.75rem; display: flex; gap: 0.75rem; align-items: flex-start; }
+  .conf-icon { width: 32px; height: 32px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
   .conf-icon svg { width: 16px; height: 16px; }
   .conf-text strong { font-size: 13px; font-weight: 600; color: #8B5A1F; display: block; margin-bottom: 2px; }
   .conf-text p { font-size: 12px; color: #6b5f50; line-height: 1.5; }
 
-  /* ── SECTIONS ── */
   .section { display: none; }
   .section.active { display: block; }
 
-  .section-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding: 4px 10px;
-    border-radius: 20px;
-    background: var(--green-light);
-    color: var(--green-dark);
-    margin-bottom: 0.6rem;
-  }
-
+  .section-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 20px; background: var(--green-light); color: var(--green-dark); margin-bottom: 0.6rem; }
   .section-title { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 0.35rem; }
-  .section-intro {
-    font-size: 13px;
-    color: var(--text-muted);
-    line-height: 1.65;
-    margin-bottom: 1.75rem;
-    padding: 0.85rem 1rem;
-    background: var(--bg-soft);
-    border-radius: var(--radius);
-    border-left: 3px solid #C17F3A;
-  }
+  .section-intro { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.75rem; padding: 0.85rem 1rem; background: var(--bg-soft); border-radius: var(--radius); border-left: 3px solid #C17F3A; }
 
-  /* ── FORM ELEMENTS ── */
   .q-group { margin-bottom: 1.4rem; }
-  .q-label {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text);
-    display: block;
-    margin-bottom: 3px;
-  }
-  .q-hint {
-    font-size: 12px;
-    color: var(--text-muted);
-    line-height: 1.5;
-    margin-bottom: 6px;
-  }
+  .q-label { font-size: 13px; font-weight: 600; color: var(--text); display: block; margin-bottom: 3px; }
+  .q-hint { font-size: 12px; color: var(--text-muted); line-height: 1.5; margin-bottom: 6px; }
 
-  input[type="text"],
-  input[type="date"],
-  input[type="tel"],
-  input[type="email"],
-  input[type="number"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 8px 11px;
-    border: 1px solid var(--border-strong);
-    border-radius: var(--radius);
-    font-size: 13px;
-    color: var(--text);
-    background: var(--bg);
-    font-family: inherit;
-    transition: border-color 0.15s, box-shadow 0.15s;
-    outline: none;
+  input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%; padding: 8px 11px; border: 1px solid var(--border-strong); border-radius: var(--radius); font-size: 13px; color: var(--text); background: var(--bg); font-family: inherit; transition: border-color 0.15s, box-shadow 0.15s; outline: none;
   }
-  input:focus, textarea:focus, select:focus {
-    border-color: #C17F3A;
-    box-shadow: 0 0 0 3px rgba(193,127,58,0.15);
-  }
+  input:focus, textarea:focus, select:focus { border-color: #C17F3A; box-shadow: 0 0 0 3px rgba(193,127,58,0.15); }
   textarea { min-height: 80px; resize: vertical; }
 
-  /* ── VALIDATION STATES ── */
-  input.field-error, textarea.field-error, select.field-error {
-    border-color: var(--error-border) !important;
-    box-shadow: 0 0 0 3px rgba(192,57,43,0.12) !important;
-    background: var(--error-bg);
-  }
-  input.field-valid, textarea.field-valid, select.field-valid {
-    border-color: #86efac !important;
-  }
-  .field-error-msg {
-    font-size: 11px;
-    color: var(--error);
-    margin-top: 4px;
-    display: none;
-    font-weight: 500;
-  }
+  input.field-error, textarea.field-error, select.field-error { border-color: var(--error-border) !important; box-shadow: 0 0 0 3px rgba(192,57,43,0.12) !important; background: var(--error-bg); }
+  input.field-valid, textarea.field-valid, select.field-valid { border-color: #86efac !important; }
+  .field-error-msg { font-size: 11px; color: var(--error); margin-top: 4px; display: none; font-weight: 500; }
   .field-error-msg.visible { display: block; }
 
-  /* ── SECTION VALIDATION BANNER ── */
-  .section-error-banner {
-    background: var(--error-bg);
-    border: 1px solid var(--error-border);
-    border-radius: var(--radius);
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
-    font-size: 13px;
-    color: var(--error);
-    font-weight: 500;
-    display: none;
-    align-items: center;
-    gap: 8px;
-  }
+  .section-error-banner { background: var(--error-bg); border: 1px solid var(--error-border); border-radius: var(--radius); padding: 0.75rem 1rem; margin-bottom: 1rem; font-size: 13px; color: var(--error); font-weight: 500; display: none; align-items: center; gap: 8px; }
   .section-error-banner.visible { display: flex; }
 
   .q-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .q-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
-
   .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  .sub-label { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; margin-top: 12px; display: block; }
 
-  .sub-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 6px;
-    margin-top: 12px;
-    display: block;
-  }
-
-  /* ── YES/NO BUTTONS ── */
   .yn-row { display: flex; gap: 8px; margin-top: 5px; flex-wrap: wrap; }
-  .yn-btn {
-    padding: 6px 16px;
-    border: 1px solid var(--border-strong);
-    border-radius: 20px;
-    background: var(--bg);
-    font-size: 12px;
-    font-weight: 500;
-    cursor: pointer;
-    color: var(--text-muted);
-    transition: all 0.15s;
-    font-family: inherit;
-  }
+  .yn-btn { padding: 6px 16px; border: 1px solid var(--border-strong); border-radius: 20px; background: var(--bg); font-size: 12px; font-weight: 500; cursor: pointer; color: var(--text-muted); transition: all 0.15s; font-family: inherit; }
   .yn-btn:hover { border-color: var(--green); color: var(--green-dark); }
   .yn-btn.sel-yes { background: var(--green-light); border-color: var(--green); color: var(--green-dark); font-weight: 600; }
   .yn-btn.sel-no { background: #fef2f2; border-color: #fca5a5; color: #b91c1c; font-weight: 600; }
   .yn-btn.sel-unsure { background: #fffbeb; border-color: #fcd34d; color: #92400e; font-weight: 600; }
 
-  /* ── SUB FIELDS ── */
-  .sub-q {
-    margin-top: 10px;
-    padding: 1rem;
-    background: var(--bg-soft);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    display: none;
-  }
+  .sub-q { margin-top: 10px; padding: 1rem; background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); display: none; }
 
-  /* ── CARD CONTAINERS ── */
-  .asset-card {
-    background: var(--bg-soft);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem;
-    margin-bottom: 0.75rem;
-  }
-  .asset-title {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
-  }
+  .asset-card { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin-bottom: 0.75rem; }
+  .asset-title { font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
 
-  /* ── INCOME TABLE ── */
   .income-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .income-table th {
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 4px 6px 8px;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-  }
+  .income-table th { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 6px 8px; text-align: center; border-bottom: 1px solid var(--border); }
   .income-table th:first-child { text-align: left; }
   .income-table td { padding: 5px 6px; border-bottom: 1px solid var(--border); }
   .income-table td:first-child { color: var(--text); font-size: 13px; }
   .income-table input { text-align: center; }
 
-  /* ── HEALTH TABLE ── */
   .health-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .health-table th {
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 6px 8px;
-    text-align: center;
-    background: #ece6dd;
-    border-bottom: 1px solid var(--border);
-  }
+  .health-table th { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 6px 8px; text-align: center; background: #ece6dd; border-bottom: 1px solid var(--border); }
   .health-table th:first-child { text-align: left; width: 55%; }
   .health-table td { padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: middle; }
   .health-table td:first-child { font-size: 13px; color: var(--text); line-height: 1.45; }
@@ -342,111 +134,59 @@
   .health-yn { display: flex; gap: 10px; justify-content: center; }
   .health-yn label { font-size: 12px; display: flex; align-items: center; gap: 4px; cursor: pointer; color: var(--text-muted); }
 
-  /* ── RISK QUESTIONS ── */
-  .risk-q {
-    background: var(--bg-soft);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem;
-    margin-bottom: 0.75rem;
-  }
+  .risk-q { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin-bottom: 0.75rem; }
   .risk-q-text { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 0.6rem; line-height: 1.5; }
   .risk-opts { display: flex; flex-direction: column; gap: 5px; }
   .risk-opt label { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--text); cursor: pointer; line-height: 1.5; }
   .risk-opt input { margin-top: 3px; flex-shrink: 0; accent-color: var(--green); }
 
-  .score-box {
-    background: var(--green-light);
-    border: 1px solid var(--green-mid);
-    border-radius: var(--radius);
-    padding: 1rem 1.25rem;
-    text-align: center;
-    margin-top: 1rem;
-    display: none;
-  }
-  .score-num { font-size: 32px; font-weight: 700; color: #8B5A1F; }
-  .score-lbl { font-size: 14px; font-weight: 600; color: #C17F3A; margin-top: 2px; }
-  .score-sub { font-size: 12px; color: #6b5f50; margin-top: 4px; }
-
-  /* ── NAV BUTTONS ── */
-  .nav-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--border);
-  }
-  .btn {
-    padding: 9px 22px;
-    border-radius: var(--radius);
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: inherit;
-    transition: all 0.15s;
-    border: 1px solid transparent;
-  }
+  .nav-row { display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+  .btn { padding: 9px 22px; border-radius: var(--radius); font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 0.15s; border: 1px solid transparent; }
   .btn-back { background: var(--bg); border-color: var(--border-strong); color: var(--text-muted); }
   .btn-back:hover { background: var(--bg-soft); }
   .btn-next { background: var(--green); color: #fff; }
   .btn-next:hover { background: var(--green-dark); }
+
   .btn-pdf {
-    background: var(--green);
-    color: #fff;
-    padding: 9px 22px;
-    border-radius: var(--radius);
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: inherit;
-    border: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    transition: background 0.15s;
+    background: var(--green); color: #fff; padding: 9px 22px; border-radius: var(--radius); font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; border: none; display: inline-flex; align-items: center; gap: 7px; transition: background 0.15s;
   }
   .btn-pdf:hover { background: var(--green-dark); }
   .btn-pdf:disabled { opacity: 0.7; cursor: not-allowed; }
 
-  /* ── COMPLETE SCREEN ── */
-  .complete-wrap { text-align: center; padding: 1.5rem 0; }
-  .complete-icon {
-    width: 64px; height: 64px;
-    border-radius: 50%;
-    background: var(--green-light);
-    display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 1.25rem;
+  .btn-print {
+    background: transparent; color: var(--green-dark); padding: 9px 18px; border-radius: var(--radius); font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; border: 1px solid var(--green-mid); display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s;
   }
+  .btn-print:hover { background: var(--green-light); border-color: var(--green); }
+
+  .complete-wrap { text-align: center; padding: 1.5rem 0; }
+  .complete-icon { width: 64px; height: 64px; border-radius: 50%; background: var(--green-light); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; }
   .complete-title { font-size: 22px; font-weight: 700; margin-bottom: 0.5rem; }
   .complete-sub { font-size: 14px; color: var(--text-muted); line-height: 1.7; max-width: 480px; margin: 0 auto 2rem; }
 
   .next-steps { text-align: left; margin-bottom: 1.5rem; }
   .next-steps h3 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 0.75rem; }
   .step-item { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px; font-size: 13px; color: var(--text); line-height: 1.5; }
-  .step-num {
-    width: 22px; height: 22px;
-    border-radius: 50%;
-    background: var(--green-light);
-    color: var(--green-dark);
-    font-size: 11px;
-    font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
+  .step-num { width: 22px; height: 22px; border-radius: 50%; background: var(--green-light); color: var(--green-dark); font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
 
-  /* ── LOADING SPINNER ── */
-  .spinner {
-    display: inline-block;
-    width: 14px; height: 14px;
-    border: 2px solid rgba(255,255,255,0.4);
-    border-top-color: #fff;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    vertical-align: middle;
-  }
+  .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,255,0.4); border-top-color: #fff; border-radius: 50%; animation: spin 0.8s linear infinite; vertical-align: middle; }
   @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── ACTION BUTTONS ROW (pre-submit) ── */
+  .action-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 1rem; }
+
+  /* ── STATUS TOAST ── */
+  #status-toast {
+    position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+    background: #1e1e24; color: #fff; padding: 12px 20px;
+    border-radius: 8px; font-size: 13px; font-weight: 500;
+    display: none; align-items: center; gap: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    max-width: 360px;
+  }
+  #status-toast.show { display: flex; }
+  #status-toast.toast-success { border-left: 4px solid #22c55e; }
+  #status-toast.toast-error   { border-left: 4px solid #ef4444; }
+  #status-toast.toast-info    { border-left: 4px solid #C17F3A; }
 
   /* ══════════════════════════════════════════════
      PRINT / PDF STYLES
@@ -455,7 +195,7 @@
     body { background: #fff; font-size: 11px; }
     .screen-wrap { max-width: 100%; padding: 0; }
     .form-card { border: none; border-radius: 0; }
-    .progress-wrap, .nav-row, .btn, .section-badge, .p-step, .score-box { display: none !important; }
+    .progress-wrap, .nav-row, .btn, .section-badge, .p-step, .score-box, #status-toast, .action-row { display: none !important; }
     .form-header { padding: 1rem 1.5rem; -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #1e1e24 !important; border-bottom: 3px solid #C17F3A; }
     .form-header-text h1 { font-size: 16px; }
     .form-body { padding: 1rem 1.5rem; }
@@ -466,20 +206,13 @@
     .q-group { margin-bottom: 0.75rem; }
     .q-label { font-size: 11px; margin-bottom: 2px; }
     .q-hint { display: none; }
-    input[type="text"], input[type="date"], input[type="tel"],
-    input[type="email"], input[type="number"], select, textarea {
-      border: none;
-      border-bottom: 1px solid #ccc;
-      border-radius: 0;
-      padding: 2px 0;
-      font-size: 11px;
-      background: transparent;
+    input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="number"], select, textarea {
+      border: none; border-bottom: 1px solid #ccc; border-radius: 0; padding: 2px 0; font-size: 11px; background: transparent;
     }
     textarea { min-height: 40px; }
     .yn-btn { display: none; }
     .print-yn { display: flex !important; gap: 16px; }
     .asset-card { border: 1px solid #e2e8f0; background: #f8fafc; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .risk-q { border: 1px solid #e2e8f0; background: #f8fafc; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .health-table th { background: #f1f5f9; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .sub-q { display: block !important; }
     .print-section-break { page-break-before: always; }
@@ -490,17 +223,10 @@
     input.field-error, textarea.field-error { border: none !important; border-bottom: 1px solid #ccc !important; background: transparent !important; box-shadow: none !important; }
   }
 
-  /* hidden print checkboxes */
   .print-yn { display: none; }
   .print-check { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
-  .check-box {
-    width: 12px; height: 12px;
-    border: 1px solid #999;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
+  .check-box { width: 12px; height: 12px; border: 1px solid #999; border-radius: 2px; flex-shrink: 0; }
 
-  /* ── MOBILE ── */
   @media (max-width: 560px) {
     .form-body { padding: 1.25rem; }
     .form-header { padding: 1.25rem; gap: 1rem; }
@@ -512,12 +238,19 @@
 </style>
 </head>
 <body>
+
+<!-- STATUS TOAST -->
+<div id="status-toast">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="toast-icon"></svg>
+  <span id="toast-msg"></span>
+</div>
+
 <div class="screen-wrap">
 <div class="form-card">
 
   <div class="form-header">
     <div class="form-header-logo">
-      <img src="data:image/png;base64,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" alt="TWLS Group Logo" style="height:110px; width:auto; display:block;" />
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACMCAYAAACeTFAfAAByBUlEQVR42u29d5gkd3Xu//lW7NyTdmZ2wu7MZu2uNimjhAIggkTGYEy27882xiZfsMHGF2ywwdf2BYOxwTYWGAMGRJIAZaGcN2vz5NnJM5270vf3R1V3V4dZca8jmH4eaaWdnuquqlMnvOc97xH84tX0EgKEEEgPJBKAzUMdclN/DxOzixw8MSP89wmEACklUv7iutVdw19cgvqXogg8r2YlOwa75HWXbuPyXSniEQXXlfxk/xz/cu9pRqbmxWq/9wvD+sULAYiQYeimwZ4tHfKmKwbYOdhLPCoplj0c10VRVWKmTjbvsv/MDLc9MMLB0UVRLnogQBEC6VX83C8M6791yKsYlKKqXL9vvXzhVVvYstZAwcPyJOViiWImi1X20E2FeDqFGTXRhIIiJIdn8nzrRyd4aP+k8AKTUhWB9984RIpfGBQkIyYXnNcpb7xiK+cNJfFcB8cD27LIr2Qp2xrRNVuJ926iOD9G/uxhTLVMvC2FZhjoikAVgv2jOW657xkOHV0QOdv+bx0i/1sZliL80/UCN9LdFpOX7hzkpis30NumoGhQsjzsUonccgZXJEn07STaswEzniaeSFHI5ynlliicPUlh+hAqORJtKfRIFENXEC6MjJe57YlTPPjkGAslR1QMTEo/0f+FYf0cJeTImkG1JePyxis285xL+ulNCsqexHUlpXye3HIOV02T6N9BvGcTRjxNR9ca1g1tpmPNWpYXZxk9dYzF+VnK+RVy08fJTR1CdVdItiXQIlF0TSBQOJuxuPOpMe57epbJiYX/Fh5M/Lx6qHBec/GednnpjmGu3dGLoSu40sOyPUq5LIVsCSXWR3LwfCJdg0RiCdb09DE4vIW2jm6klNh2GRkKpRLQNA0hBEvzs4ydfob5mWnKhRyF2TPkJg8i7EUS6ThmPIamCHRNY8GOcN+9J/neEyeZmsmIVsb/C8P6L25QAsGuwXb5iuuG2Xt+LyaCoi1xXYdiJks+Z6ElB0gNnk+ks59IPEnv2kEGhjaTTLfjeR6O4/gXqPYvHziVEik9ADRNRwjBytIcY6ePMXt2ilI+S3F+lOzEQZTyHIl0HCMeR0GSiBpMLLl8/77TPHRkgsmZbMiD/fxUkT/zhtVY4em6ynP2bZRX7+7jouEYiqFg2xLHsSmuZCgWJXrbEMmBHUTae4klUqwdWE/f+k3EEylcx8F1HYQQDZdJIoRSTf5FACtI372hahqKopBZXmD8zDFmzk5RzmcpLIyTGz8ApRniqRhGLIauKhiayooFP340y20PjPDoiamabSP+WxtW+K8Okbj+voo57dljeF5gUPdpfj7pRBuUPYXM0wZFG3SKsFE04NJfR9hIGTBDSsLZCiuAhVYU0SHpzLGZcJBvGPfqiVPbWJC7n7iqIoKotxJMH5bJbPvE5i6+8/QGWaZA9bGh6amAo6hP2aLIpj0XhBm9oFk3J0oi0PQVLIU9VJVu5kgLzS8O4OQoKH5jKJyqRgU6XLRqBjfaSfKB3fQVpV9xkQbqbW14L7VIOJsHVJe7qD5Yit6EmpMQqxgSotUAGgVj7WdqV1mzXdHb2u0OmSLQBNH+VKlJStHIKiGrq6AMRB/Vt7q6JEI1dqIR4b8v4tHJvRRvmrqhOVaJOIdrGqM9IJqiLdq9CUON2t7yqxqhbJkS/T0u/eMN2IKq5LExmRlcJVIz3BaTJiohW0bYpX5sZQhw4L0DUXVGYYyNiGkiWd1E+SyZXQhIiVx0Fk5rOKDxpCX3oGCuqqRGtIUOb+rWqhlFNR0dFWqEFBHqAV3Ys2k2xjkdVU0XuioO8StbqCWa6N0pVxQ3epmRYZk8dGZstmIaqOhLFa6rbY5Sp8pVIUkJmXc7JChJTFcSR0FBQQoX05dqBQlsMhFdN0LiQhXrpImhJ0JCMzopIxgJOeGOcQDpMwxcAHxuInFpBTJWZ4k5gI0IXPNRJIzMQRHNbPY7IgPIHHMJBsMYZNi6BKAJQ7DPiP9LROi7LjRbNFy0B2GmKW5GlVuSB9RvYKa0mL7qkKQFMbVLEwqBJBnLPRFCnqe/+VKlS7JqBFZ6tCOZSl1n+gRsQc15fJO9fMCkHPpKD4rNS/aahqL9fkD4hqSb1VioqHn0AoNPzVg7RhSdnolQlFobKlYpf8mvUlqwf7xt3bTjbH9hE8dcDDvx1kLa2JJqaIo1qAA4YwUTEXXBjkCmEkXoAAAAASUVORK5CYII=" alt="TWLS Group Logo" style="height:110px; width:auto; display:block;" />
     </div>
     <div class="form-header-text">
       <h1>Confidential Planning Questionnaire</h1>
@@ -527,7 +260,6 @@
 
   <div class="form-body">
 
-    <!-- Progress -->
     <div class="progress-wrap">
       <div class="progress-top">
         <span id="prog-label">Section 1 of 5</span>
@@ -543,24 +275,21 @@
       </div>
     </div>
 
-    <!-- CONFIDENTIALITY NOTICE -->
     <div class="conf-notice">
       <div class="conf-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
       </div>
       <div class="conf-text">
         <strong>Your information is strictly confidential</strong>
-        <p>This form is used solely for financial and estate planning purposes by TWLS Group. Your responses are never sold, shared with third parties, or used for marketing. When you submit this form, your information is transmitted securely using industry-standard encryption (the same technology banks use) and is received only by our team through Wealthbox, our secure, FINRA-compliant client management system. Your data is never stored on this website and is never accessible to anyone outside of TWLS Group.</p>
+        <p>This form is used solely for financial and estate planning purposes by TWLS Group. Your responses are never sold, shared with third parties, or used for marketing. When you submit this form, your information is transmitted securely using industry-standard encryption and is received only by our team through Wealthbox, our secure, FINRA-compliant client management system.</p>
       </div>
     </div>
 
-    <!-- ══ SECTION 1: CLIENT INFO ══ -->
+    <!-- ══ SECTION 1 ══ -->
     <div class="section active" id="s1">
       <div class="section-badge">Section 1 · Client &amp; Family Information</div>
       <div class="section-title">Who are we planning for?</div>
-      <div class="section-intro">We start with your full legal names and family picture. Getting this right ensures beneficiary designations, legal documents, and account titling all match exactly — small mismatches can cause costly delays later.</div>
+      <div class="section-intro">We start with your full legal names and family picture. Getting this right ensures beneficiary designations, legal documents, and account titling all match exactly.</div>
 
       <div class="section-error-banner" id="s1-error">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
@@ -571,13 +300,13 @@
         <div class="q-row">
           <div>
             <label class="q-label" for="c1_first_name">Client 1 — First Name <span style="color:var(--error)">*</span></label>
-            <div class="q-hint">As it appears on your driver's license or government ID</div>
+            <div class="q-hint">As it appears on your government ID</div>
             <input type="text" id="c1_first_name" name="c1_first_name" placeholder="First name" autocomplete="given-name" required maxlength="100" />
             <div class="field-error-msg" id="c1_first_name-err">Please enter Client 1's first name.</div>
           </div>
           <div>
             <label class="q-label" for="c1_last_name">Client 1 — Last Name <span style="color:var(--error)">*</span></label>
-            <div class="q-hint">As it appears on your driver's license or government ID</div>
+            <div class="q-hint">As it appears on your government ID</div>
             <input type="text" id="c1_last_name" name="c1_last_name" placeholder="Last name" autocomplete="family-name" required maxlength="100" />
             <div class="field-error-msg" id="c1_last_name-err">Please enter Client 1's last name.</div>
           </div>
@@ -643,18 +372,17 @@
 
       <div class="q-group">
         <label class="q-label" for="family_members">Family Members &amp; Dependents</label>
-        <div class="q-hint">List children, stepchildren, or anyone you feel financially responsible for. Include names, relationships, and dates of birth.</div>
-        <textarea id="family_members" name="family_members" placeholder="Example: Sarah (daughter, born 1998), James (son, born 2002, special needs), Emily (stepdaughter, born 2005)..." maxlength="2000"></textarea>
+        <div class="q-hint">Names, relationships, and dates of birth.</div>
+        <textarea id="family_members" name="family_members" placeholder="Example: Sarah (daughter, born 1998), James (son, born 2002)..." maxlength="2000"></textarea>
       </div>
 
       <div class="q-group">
         <label class="q-label" for="family_circumstances">Special family circumstances we should know about?</label>
-        <div class="q-hint">Blended families, strained relationships, special needs dependents, or someone you'd want protected in a specific way.</div>
-        <textarea id="family_circumstances" name="family_circumstances" placeholder="Optional — blended family dynamics, special needs, estrangements, spendthrift concerns, etc." maxlength="2000"></textarea>
+        <textarea id="family_circumstances" name="family_circumstances" placeholder="Optional — blended family, special needs, estrangements, spendthrift concerns, etc." maxlength="2000"></textarea>
       </div>
 
       <div class="q-group">
-        <label class="q-label">Preferred appointment dates &amp; times</label>
+        <label class="q-label">Preferred appointment dates</label>
         <div class="q-row">
           <div>
             <label class="q-label" for="appt_first" style="font-weight:400; font-size:12px;">First Visit</label>
@@ -668,28 +396,27 @@
       </div>
 
       <div class="nav-row">
-        <div></div>
-        <button class="btn btn-next" onclick="nextSection(1, 2)">Next: Estate Planning →</button>
+        <button class="btn-print" onclick="printForm()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          Print / Save PDF
+        </button>
+        <button class="btn btn-next" onclick="nextSection(1,2)">Next: Estate Planning →</button>
       </div>
     </div>
 
-    <!-- ══ SECTION 2: ESTATE PLANNING ══ -->
+    <!-- ══ SECTION 2 ══ -->
     <div class="section" id="s2">
       <div class="section-badge">Section 2 · Estate Planning &amp; Legal Documents</div>
       <div class="section-title">Do your documents reflect your wishes today?</div>
-      <div class="section-intro">Estate plans only work if they're current, coordinated, and properly funded. Many families have documents that were perfect when written — but life moves faster than paperwork. Our goal is alignment, not just paperwork in a drawer.</div>
+      <div class="section-intro">Estate plans only work if they're current, coordinated, and properly funded. Our goal is alignment, not just paperwork in a drawer.</div>
 
       <div class="q-group">
         <label class="q-label">Do you have a Will?</label>
-        <div class="q-hint">A will directs how your assets are distributed and names guardians for minor children.</div>
         <div class="yn-row">
           <button class="yn-btn" onclick="yn(this,'will','yes')" data-field="will" data-val="Yes">Yes</button>
           <button class="yn-btn" onclick="yn(this,'will','no')" data-field="will" data-val="No">No</button>
         </div>
-        <div class="print-yn">
-          <div class="print-check"><div class="check-box"></div> Yes</div>
-          <div class="print-check"><div class="check-box"></div> No</div>
-        </div>
+        <div class="print-yn"><div class="print-check"><div class="check-box"></div> Yes</div><div class="print-check"><div class="check-box"></div> No</div></div>
         <div class="sub-q" id="will-sub">
           <div class="q-row">
             <div><label class="q-label" for="will_year_created">Year Created</label><input type="number" id="will_year_created" name="will_year_created" placeholder="e.g. 2015" min="1900" max="2099" /></div>
@@ -701,17 +428,12 @@
 
       <div class="q-group">
         <label class="q-label">Do you have a Revocable Living Trust?</label>
-        <div class="q-hint">A properly funded trust lets your estate skip probate, maintains privacy, and can provide more control over how and when heirs receive assets.</div>
         <div class="yn-row">
           <button class="yn-btn" onclick="yn(this,'trust','yes')" data-field="trust" data-val="Yes">Yes</button>
           <button class="yn-btn" onclick="yn(this,'trust','no')" data-field="trust" data-val="No">No</button>
           <button class="yn-btn" onclick="yn(this,'trust','unsure')" data-field="trust" data-val="Not sure">Not sure</button>
         </div>
-        <div class="print-yn">
-          <div class="print-check"><div class="check-box"></div> Yes</div>
-          <div class="print-check"><div class="check-box"></div> No</div>
-          <div class="print-check"><div class="check-box"></div> Not sure</div>
-        </div>
+        <div class="print-yn"><div class="print-check"><div class="check-box"></div> Yes</div><div class="print-check"><div class="check-box"></div> No</div><div class="print-check"><div class="check-box"></div> Not sure</div></div>
         <div class="sub-q" id="trust-sub">
           <div class="q-row">
             <div><label class="q-label" for="trust_year_created">Year Created</label><input type="number" id="trust_year_created" name="trust_year_created" placeholder="e.g. 2018" min="1900" max="2099" /></div>
@@ -719,7 +441,6 @@
           </div>
           <div style="margin-top:10px">
             <label class="q-label">Are all intended assets titled in the trust?</label>
-            <div class="q-hint">This is one of the most common gaps — assets not retitled often still go through probate.</div>
             <div class="yn-row">
               <button class="yn-btn" onclick="ynSimple(this,'trust_funded')" data-field="trust_funded" data-val="Yes, fully funded">Yes, fully funded</button>
               <button class="yn-btn" onclick="ynSimple(this,'trust_funded')" data-field="trust_funded" data-val="Partially funded">Partially funded</button>
@@ -731,15 +452,13 @@
 
       <div class="q-group">
         <label class="q-label" for="beneficiary_count">Number of Beneficiaries / Heirs</label>
-        <div class="q-hint">Helps us map beneficiary designations across all accounts and documents.</div>
         <input type="number" id="beneficiary_count" name="beneficiary_count" placeholder="e.g. 3" style="max-width:120px" min="0" max="99" />
       </div>
 
       <div class="q-group">
         <label class="q-label">Primary &amp; Secondary Beneficiaries</label>
-        <div class="q-hint">List each beneficiary's full name, relationship, and date of birth.</div>
         <span class="sub-label">Client 1 — Primary Beneficiaries</span>
-        <textarea id="c1_primary_benes" name="c1_primary_benes" placeholder="Name | Relationship | DOB — e.g. Mary Smith | Spouse | 06/15/1958" maxlength="1000"></textarea>
+        <textarea id="c1_primary_benes" name="c1_primary_benes" placeholder="Name | Relationship | DOB" maxlength="1000"></textarea>
         <span class="sub-label">Client 1 — Secondary (Contingent) Beneficiaries</span>
         <textarea id="c1_secondary_benes" name="c1_secondary_benes" placeholder="Name | Relationship | DOB" maxlength="1000"></textarea>
         <span class="sub-label">Client 2 — Primary Beneficiaries</span>
@@ -753,64 +472,25 @@
 
       <div class="q-group">
         <label class="q-label">Financial Power of Attorney (FPOA)</label>
-        <div class="q-hint">Designates someone to manage financial decisions if you become unable to.</div>
         <div class="q-row">
-          <div>
-            <div class="q-hint" style="margin-bottom:4px;">Client 1</div>
-            <div class="yn-row">
-              <button class="yn-btn" onclick="ynSimple(this,'fpoa_c1')" data-field="fpoa_c1" data-val="Yes">Yes</button>
-              <button class="yn-btn" onclick="ynSimple(this,'fpoa_c1')" data-field="fpoa_c1" data-val="No">No</button>
-            </div>
-          </div>
-          <div>
-            <div class="q-hint" style="margin-bottom:4px;">Client 2</div>
-            <div class="yn-row">
-              <button class="yn-btn" onclick="ynSimple(this,'fpoa_c2')" data-field="fpoa_c2" data-val="Yes">Yes</button>
-              <button class="yn-btn" onclick="ynSimple(this,'fpoa_c2')" data-field="fpoa_c2" data-val="No">No</button>
-            </div>
-          </div>
+          <div><div class="q-hint" style="margin-bottom:4px;">Client 1</div><div class="yn-row"><button class="yn-btn" onclick="ynSimple(this,'fpoa_c1')" data-field="fpoa_c1" data-val="Yes">Yes</button><button class="yn-btn" onclick="ynSimple(this,'fpoa_c1')" data-field="fpoa_c1" data-val="No">No</button></div></div>
+          <div><div class="q-hint" style="margin-bottom:4px;">Client 2</div><div class="yn-row"><button class="yn-btn" onclick="ynSimple(this,'fpoa_c2')" data-field="fpoa_c2" data-val="Yes">Yes</button><button class="yn-btn" onclick="ynSimple(this,'fpoa_c2')" data-field="fpoa_c2" data-val="No">No</button></div></div>
         </div>
       </div>
 
       <div class="q-group">
         <label class="q-label">Healthcare Power of Attorney (HPOA)</label>
-        <div class="q-hint">Authorizes someone to make medical decisions on your behalf.</div>
         <div class="q-row">
-          <div>
-            <div class="q-hint" style="margin-bottom:4px;">Client 1</div>
-            <div class="yn-row">
-              <button class="yn-btn" onclick="ynSimple(this,'hpoa_c1')" data-field="hpoa_c1" data-val="Yes">Yes</button>
-              <button class="yn-btn" onclick="ynSimple(this,'hpoa_c1')" data-field="hpoa_c1" data-val="No">No</button>
-            </div>
-          </div>
-          <div>
-            <div class="q-hint" style="margin-bottom:4px;">Client 2</div>
-            <div class="yn-row">
-              <button class="yn-btn" onclick="ynSimple(this,'hpoa_c2')" data-field="hpoa_c2" data-val="Yes">Yes</button>
-              <button class="yn-btn" onclick="ynSimple(this,'hpoa_c2')" data-field="hpoa_c2" data-val="No">No</button>
-            </div>
-          </div>
+          <div><div class="q-hint" style="margin-bottom:4px;">Client 1</div><div class="yn-row"><button class="yn-btn" onclick="ynSimple(this,'hpoa_c1')" data-field="hpoa_c1" data-val="Yes">Yes</button><button class="yn-btn" onclick="ynSimple(this,'hpoa_c1')" data-field="hpoa_c1" data-val="No">No</button></div></div>
+          <div><div class="q-hint" style="margin-bottom:4px;">Client 2</div><div class="yn-row"><button class="yn-btn" onclick="ynSimple(this,'hpoa_c2')" data-field="hpoa_c2" data-val="Yes">Yes</button><button class="yn-btn" onclick="ynSimple(this,'hpoa_c2')" data-field="hpoa_c2" data-val="No">No</button></div></div>
         </div>
       </div>
 
       <div class="q-group">
         <label class="q-label">Living Will / Advance Directive</label>
-        <div class="q-hint">Documents your end-of-life care preferences, relieving your family from making agonizing decisions without guidance.</div>
         <div class="q-row">
-          <div>
-            <div class="q-hint" style="margin-bottom:4px;">Client 1</div>
-            <div class="yn-row">
-              <button class="yn-btn" onclick="ynSimple(this,'livingwill_c1')" data-field="livingwill_c1" data-val="Yes">Yes</button>
-              <button class="yn-btn" onclick="ynSimple(this,'livingwill_c1')" data-field="livingwill_c1" data-val="No">No</button>
-            </div>
-          </div>
-          <div>
-            <div class="q-hint" style="margin-bottom:4px;">Client 2</div>
-            <div class="yn-row">
-              <button class="yn-btn" onclick="ynSimple(this,'livingwill_c2')" data-field="livingwill_c2" data-val="Yes">Yes</button>
-              <button class="yn-btn" onclick="ynSimple(this,'livingwill_c2')" data-field="livingwill_c2" data-val="No">No</button>
-            </div>
-          </div>
+          <div><div class="q-hint" style="margin-bottom:4px;">Client 1</div><div class="yn-row"><button class="yn-btn" onclick="ynSimple(this,'livingwill_c1')" data-field="livingwill_c1" data-val="Yes">Yes</button><button class="yn-btn" onclick="ynSimple(this,'livingwill_c1')" data-field="livingwill_c1" data-val="No">No</button></div></div>
+          <div><div class="q-hint" style="margin-bottom:4px;">Client 2</div><div class="yn-row"><button class="yn-btn" onclick="ynSimple(this,'livingwill_c2')" data-field="livingwill_c2" data-val="Yes">Yes</button><button class="yn-btn" onclick="ynSimple(this,'livingwill_c2')" data-field="livingwill_c2" data-val="No">No</button></div></div>
         </div>
       </div>
 
@@ -818,7 +498,6 @@
 
       <div class="q-group">
         <label class="q-label">Real estate outside your home state?</label>
-        <div class="q-hint">Out-of-state property can require a separate probate process in that state.</div>
         <div class="yn-row">
           <button class="yn-btn" onclick="yn(this,'outstate','yes')" data-field="outstate_real_estate" data-val="Yes">Yes</button>
           <button class="yn-btn" onclick="yn(this,'outstate','no')" data-field="outstate_real_estate" data-val="No">No</button>
@@ -831,7 +510,6 @@
 
       <div class="q-group">
         <label class="q-label">Digital assets &amp; online accounts documented?</label>
-        <div class="q-hint">Laws and company policies often prevent family members from accessing online accounts without explicit legal authority.</div>
         <div class="yn-row">
           <button class="yn-btn" onclick="ynSimple(this,'digital_assets')" data-field="digital_assets" data-val="Yes">Yes</button>
           <button class="yn-btn" onclick="ynSimple(this,'digital_assets')" data-field="digital_assets" data-val="No">No</button>
@@ -841,7 +519,6 @@
 
       <div class="q-group">
         <label class="q-label">Do you own a business?</label>
-        <div class="q-hint">Business ownership adds significant complexity to estate planning.</div>
         <div class="yn-row">
           <button class="yn-btn" onclick="yn(this,'biz','yes')" data-field="owns_business" data-val="Yes">Yes</button>
           <button class="yn-btn" onclick="yn(this,'biz','no')" data-field="owns_business" data-val="No">No</button>
@@ -858,8 +535,7 @@
 
       <div class="q-group">
         <label class="q-label" for="estate_concerns">Primary estate planning concerns or questions</label>
-        <div class="q-hint">What worries you most about your current estate plan?</div>
-        <textarea id="estate_concerns" name="estate_concerns" placeholder="Share your biggest concerns, questions, or things you want to ensure are covered..." maxlength="2000"></textarea>
+        <textarea id="estate_concerns" name="estate_concerns" placeholder="Share your biggest concerns..." maxlength="2000"></textarea>
       </div>
 
       <div class="nav-row">
@@ -868,25 +544,18 @@
       </div>
     </div>
 
-    <!-- ══ SECTION 3: ASSETS & INCOME ══ -->
+    <!-- ══ SECTION 3 ══ -->
     <div class="section" id="s3">
       <div class="section-badge">Section 3 · Income &amp; Assets</div>
       <div class="section-title">What does your financial picture look like?</div>
-      <div class="section-intro">Coordinating income and assets helps us manage taxes, and long-term sustainability. We want to see what's reliable income versus what depends on markets — and how resilient your plan truly is.</div>
+      <div class="section-intro">Coordinating income and assets helps us manage taxes and long-term sustainability. We want to see what's reliable income versus what depends on markets.</div>
 
       <div class="q-group">
         <label class="q-label">Monthly Income Sources</label>
-        <div class="q-hint">Include all recurring income. This helps us understand what's guaranteed vs. variable.</div>
         <div class="asset-card">
           <div class="asset-title">Monthly Income (enter monthly amounts)</div>
           <table class="income-table">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Client 1</th>
-                <th>Client 2</th>
-              </tr>
-            </thead>
+            <thead><tr><th></th><th>Client 1</th><th>Client 2</th></tr></thead>
             <tbody>
               <tr><td>Monthly Pension</td><td><input type="text" id="income_pension_c1" name="income_pension_c1" placeholder="$0" maxlength="20" /></td><td><input type="text" id="income_pension_c2" name="income_pension_c2" placeholder="$0" maxlength="20" /></td></tr>
               <tr><td>Social Security</td><td><input type="text" id="income_ss_c1" name="income_ss_c1" placeholder="$0" maxlength="20" /></td><td><input type="text" id="income_ss_c2" name="income_ss_c2" placeholder="$0" maxlength="20" /></td></tr>
@@ -920,49 +589,38 @@
         </div>
         <div class="asset-card">
           <div class="asset-title">Additional Properties</div>
-          <div class="q-hint" style="margin-bottom:8px;">List description, approximate value, balance owed, county, and state for each additional property.</div>
-          <textarea id="additional_properties" name="additional_properties" placeholder="e.g. Rental duplex, Houston TX, Harris County — value ~$340,000, balance ~$120,000&#10;Lake cabin, Livingston TX, Polk County — value ~$180,000, no balance" maxlength="2000"></textarea>
+          <textarea id="additional_properties" name="additional_properties" placeholder="Description, value, balance, county, state for each..." maxlength="2000"></textarea>
         </div>
       </div>
 
       <div class="q-group">
         <label class="q-label">Secure / Low-Risk Accounts</label>
-        <div class="q-hint">Checking, savings, CDs, money market, savings bonds.</div>
         <div class="asset-card">
           <div class="asset-title">Checking / Money Market / Savings / CDs / Bonds</div>
-          <textarea id="secure_accounts" name="secure_accounts" placeholder="Account type | Institution | Approx. Balance | Interest Rate | In Trust (Y/N)&#10;e.g. Checking | Chase | $25,000 | 0.5% | No&#10;     3-yr CD | Frost Bank | $80,000 | 4.8% | Yes" maxlength="2000"></textarea>
+          <textarea id="secure_accounts" name="secure_accounts" placeholder="Account type | Institution | Approx. Balance | Interest Rate | In Trust (Y/N)" maxlength="2000"></textarea>
         </div>
       </div>
 
       <div class="q-group">
         <label class="q-label">Life Insurance &amp; Fixed Annuities</label>
-        <div class="q-hint">These are part of your secured assets. We also need to confirm beneficiary designations are coordinated with your estate plan.</div>
         <div class="asset-card">
           <div class="asset-title">Life Insurance Cash Values &amp; Fixed / Fixed-Indexed Annuities</div>
-          <textarea id="life_insurance_annuities" name="life_insurance_annuities" placeholder="Type | Carrier | Cash Value | Surrender Value | Beneficiary&#10;e.g. Whole Life | Prudential | $65,000 cash value | Ben: spouse&#10;     Fixed Annuity | Midland National | $120,000 | 4.2% | Ben: children equally" maxlength="2000"></textarea>
+          <textarea id="life_insurance_annuities" name="life_insurance_annuities" placeholder="Type | Carrier | Cash Value | Surrender Value | Beneficiary" maxlength="2000"></textarea>
         </div>
       </div>
 
       <div class="q-group">
         <label class="q-label">Investment / Market Accounts</label>
-        <div class="q-hint">Mutual funds, stocks, bonds, variable annuities.</div>
         <div class="asset-card">
           <div class="asset-title">Mutual Funds / Stocks / Bonds / Variable Annuities</div>
-          <textarea id="investment_accounts" name="investment_accounts" placeholder="Account type | Institution | Approx. Value | In Trust (Y/N)&#10;e.g. Brokerage (mutual funds) | Fidelity | $320,000 | No&#10;     Variable Annuity | Jackson National | $95,000 | N/A" maxlength="2000"></textarea>
+          <textarea id="investment_accounts" name="investment_accounts" placeholder="Account type | Institution | Approx. Value | In Trust (Y/N)" maxlength="2000"></textarea>
         </div>
       </div>
 
       <div class="q-group">
-        <label class="q-label" for="liquidity_reserve">Emergency / Liquidity Reserve Preference</label>
-        <div class="q-hint">How much do you like to keep easily accessible?</div>
-        <input type="text" id="liquidity_reserve" name="liquidity_reserve" placeholder="e.g. $25,000 — roughly 3 months of expenses" style="max-width:320px;" maxlength="100" />
-      </div>
-
-      <div class="q-group">
-        <label class="q-label">Current Tax Rate &amp; Social Security Details</label>
         <div class="q-row">
-          <div><label class="q-label" for="tax_rate" style="font-size:12px; font-weight:500;">Current Tax Rate</label><input type="text" id="tax_rate" name="tax_rate" placeholder="e.g. 22%" maxlength="20" /></div>
-          <div><label class="q-label" for="taxable_ss" style="font-size:12px; font-weight:500;">Taxable SS Benefit Amount</label><input type="text" id="taxable_ss" name="taxable_ss" placeholder="$0 annually" maxlength="30" /></div>
+          <div><label class="q-label" for="tax_rate">Current Tax Rate</label><input type="text" id="tax_rate" name="tax_rate" placeholder="e.g. 22%" maxlength="20" /></div>
+          <div><label class="q-label" for="taxable_ss">Taxable SS Benefit Amount</label><input type="text" id="taxable_ss" name="taxable_ss" placeholder="$0 annually" maxlength="30" /></div>
         </div>
       </div>
 
@@ -972,15 +630,14 @@
       </div>
     </div>
 
-    <!-- ══ SECTION 4: HEALTHCARE ══ -->
+    <!-- ══ SECTION 4 ══ -->
     <div class="section" id="s4">
       <div class="section-badge">Section 4 · Healthcare &amp; Long-Term Care</div>
       <div class="section-title">Protecting your health and your wealth</div>
-      <div class="section-intro">Healthcare and long-term care events represent the single largest financial risk in retirement. Long-term care costs average $40,000–$50,000 per year for custodial care not covered by Medicare or supplements, lasting an average of 2–3 years. Over 50% of people will need some form of long-term care. Planning ahead now preserves your options and keeps control in your hands.</div>
+      <div class="section-intro">Long-term care costs average $40,000–$50,000 per year for custodial care not covered by Medicare. Over 50% of people will need some form of long-term care. Planning ahead now preserves your options.</div>
 
       <div class="q-group">
         <label class="q-label">Do you currently have Long-Term Care insurance?</label>
-        <div class="q-hint">If you have coverage, we'll confirm it's adequate. If not, we'll explore options.</div>
         <div class="yn-row">
           <button class="yn-btn" onclick="yn(this,'ltc','yes')" data-field="has_ltc" data-val="Yes">Yes</button>
           <button class="yn-btn" onclick="yn(this,'ltc','no')" data-field="has_ltc" data-val="No">No</button>
@@ -999,26 +656,22 @@
 
       <div class="q-group">
         <label class="q-label">Medicare Supplement (Medigap) Coverage</label>
-        <div class="q-hint">Medicare supplements can significantly reduce out-of-pocket medical costs.</div>
         <div class="q-row">
           <div>
             <span class="sub-label">Client 1</span>
             <input type="text" id="medigap_c1_plan" name="medigap_c1_plan" placeholder="Provider &amp; Plan Letter (e.g. AARP Plan G)" maxlength="100" />
             <input type="text" id="medigap_c1_premium" name="medigap_c1_premium" placeholder="Monthly premium $" style="margin-top:6px;" maxlength="30" />
-            <input type="text" id="medigap_c1_rx" name="medigap_c1_rx" placeholder="Rx benefit plan? (Y/N)" style="margin-top:6px;" maxlength="20" />
           </div>
           <div>
             <span class="sub-label">Client 2</span>
-            <input type="text" id="medigap_c2_plan" name="medigap_c2_plan" placeholder="Provider &amp; Plan Letter (e.g. AARP Plan G)" maxlength="100" />
+            <input type="text" id="medigap_c2_plan" name="medigap_c2_plan" placeholder="Provider &amp; Plan Letter" maxlength="100" />
             <input type="text" id="medigap_c2_premium" name="medigap_c2_premium" placeholder="Monthly premium $" style="margin-top:6px;" maxlength="30" />
-            <input type="text" id="medigap_c2_rx" name="medigap_c2_rx" placeholder="Rx benefit plan? (Y/N)" style="margin-top:6px;" maxlength="20" />
           </div>
         </div>
       </div>
 
       <div class="q-group">
         <label class="q-label">Date of Birth</label>
-        <div class="q-hint">Age is one of the most important factors in determining which planning strategies and insurance products are available.</div>
         <div class="q-row">
           <div><span class="sub-label">Client 1</span><input type="date" id="c1_dob" name="c1_dob" /></div>
           <div><span class="sub-label">Client 2</span><input type="date" id="c2_dob" name="c2_dob" /></div>
@@ -1027,57 +680,19 @@
 
       <div class="q-group">
         <label class="q-label">Health History</label>
-        <div class="q-hint">We ask a few general health questions — not to diagnose anything — because health status affects which planning options and products are realistically available. This information is completely confidential.</div>
+        <div class="q-hint">General health questions — completely confidential — because health status affects planning options available.</div>
         <div style="overflow-x:auto;">
           <table class="health-table">
-            <thead>
-              <tr>
-                <th>Health Question</th>
-                <th>Client 1</th>
-                <th>Client 2</th>
-              </tr>
-            </thead>
+            <thead><tr><th>Health Question</th><th>Client 1</th><th>Client 2</th></tr></thead>
             <tbody>
-              <tr>
-                <td>Cancer, heart attack, stroke, organ transplant, heart surgery, aneurysm, or kidney dialysis (past 12 months)</td>
-                <td><div class="health-yn"><label><input type="radio" name="health_serious_c1" value="Yes"> Y</label><label><input type="radio" name="health_serious_c1" value="No"> N</label></div></td>
-                <td><div class="health-yn"><label><input type="radio" name="health_serious_c2" value="Yes"> Y</label><label><input type="radio" name="health_serious_c2" value="No"> N</label></div></td>
-              </tr>
-              <tr>
-                <td>Alzheimer's, dementia, or cognitive impairment</td>
-                <td><div class="health-yn"><label><input type="radio" name="health_dementia_c1" value="Yes"> Y</label><label><input type="radio" name="health_dementia_c1" value="No"> N</label></div></td>
-                <td><div class="health-yn"><label><input type="radio" name="health_dementia_c2" value="Yes"> Y</label><label><input type="radio" name="health_dementia_c2" value="No"> N</label></div></td>
-              </tr>
-              <tr>
-                <td>HIV/AIDS or Acquired Immune Deficiency Syndrome</td>
-                <td><div class="health-yn"><label><input type="radio" name="health_hiv_c1" value="Yes"> Y</label><label><input type="radio" name="health_hiv_c1" value="No"> N</label></div></td>
-                <td><div class="health-yn"><label><input type="radio" name="health_hiv_c2" value="Yes"> Y</label><label><input type="radio" name="health_hiv_c2" value="No"> N</label></div></td>
-              </tr>
-              <tr>
-                <td>Difficulty obtaining life or health insurance in the past</td>
-                <td><div class="health-yn"><label><input type="radio" name="health_insur_denied_c1" value="Yes"> Y</label><label><input type="radio" name="health_insur_denied_c1" value="No"> N</label></div></td>
-                <td><div class="health-yn"><label><input type="radio" name="health_insur_denied_c2" value="Yes"> Y</label><label><input type="radio" name="health_insur_denied_c2" value="No"> N</label></div></td>
-              </tr>
-              <tr>
-                <td>Hospitalized in the past 5 years</td>
-                <td><div class="health-yn"><label><input type="radio" name="health_hospitalized_c1" value="Yes"> Y</label><label><input type="radio" name="health_hospitalized_c1" value="No"> N</label></div></td>
-                <td><div class="health-yn"><label><input type="radio" name="health_hospitalized_c2" value="Yes"> Y</label><label><input type="radio" name="health_hospitalized_c2" value="No"> N</label></div></td>
-              </tr>
-              <tr>
-                <td>Cancer, kidney disease, diabetes, leukemia, MS, paralysis, chest pains, heart/blood vessel disease, lung/liver disease, emphysema, stroke, or high blood pressure</td>
-                <td><div class="health-yn"><label><input type="radio" name="health_chronic_c1" value="Yes"> Y</label><label><input type="radio" name="health_chronic_c1" value="No"> N</label></div></td>
-                <td><div class="health-yn"><label><input type="radio" name="health_chronic_c2" value="Yes"> Y</label><label><input type="radio" name="health_chronic_c2" value="No"> N</label></div></td>
-              </tr>
-              <tr>
-                <td>Currently taking prescription medications or receiving medical treatment</td>
-                <td><div class="health-yn"><label><input type="radio" name="health_rx_c1" value="Yes"> Y</label><label><input type="radio" name="health_rx_c1" value="No"> N</label></div></td>
-                <td><div class="health-yn"><label><input type="radio" name="health_rx_c2" value="Yes"> Y</label><label><input type="radio" name="health_rx_c2" value="No"> N</label></div></td>
-              </tr>
-              <tr>
-                <td>Tobacco use in the past 12 months</td>
-                <td><div class="health-yn"><label><input type="radio" name="health_tobacco_c1" value="Yes"> Y</label><label><input type="radio" name="health_tobacco_c1" value="No"> N</label></div></td>
-                <td><div class="health-yn"><label><input type="radio" name="health_tobacco_c2" value="Yes"> Y</label><label><input type="radio" name="health_tobacco_c2" value="No"> N</label></div></td>
-              </tr>
+              <tr><td>Cancer, heart attack, stroke, organ transplant, heart surgery, aneurysm, or kidney dialysis (past 12 months)</td><td><div class="health-yn"><label><input type="radio" name="health_serious_c1" value="Yes"> Y</label><label><input type="radio" name="health_serious_c1" value="No"> N</label></div></td><td><div class="health-yn"><label><input type="radio" name="health_serious_c2" value="Yes"> Y</label><label><input type="radio" name="health_serious_c2" value="No"> N</label></div></td></tr>
+              <tr><td>Alzheimer's, dementia, or cognitive impairment</td><td><div class="health-yn"><label><input type="radio" name="health_dementia_c1" value="Yes"> Y</label><label><input type="radio" name="health_dementia_c1" value="No"> N</label></div></td><td><div class="health-yn"><label><input type="radio" name="health_dementia_c2" value="Yes"> Y</label><label><input type="radio" name="health_dementia_c2" value="No"> N</label></div></td></tr>
+              <tr><td>HIV/AIDS or Acquired Immune Deficiency Syndrome</td><td><div class="health-yn"><label><input type="radio" name="health_hiv_c1" value="Yes"> Y</label><label><input type="radio" name="health_hiv_c1" value="No"> N</label></div></td><td><div class="health-yn"><label><input type="radio" name="health_hiv_c2" value="Yes"> Y</label><label><input type="radio" name="health_hiv_c2" value="No"> N</label></div></td></tr>
+              <tr><td>Difficulty obtaining life or health insurance in the past</td><td><div class="health-yn"><label><input type="radio" name="health_insur_denied_c1" value="Yes"> Y</label><label><input type="radio" name="health_insur_denied_c1" value="No"> N</label></div></td><td><div class="health-yn"><label><input type="radio" name="health_insur_denied_c2" value="Yes"> Y</label><label><input type="radio" name="health_insur_denied_c2" value="No"> N</label></div></td></tr>
+              <tr><td>Hospitalized in the past 5 years</td><td><div class="health-yn"><label><input type="radio" name="health_hospitalized_c1" value="Yes"> Y</label><label><input type="radio" name="health_hospitalized_c1" value="No"> N</label></div></td><td><div class="health-yn"><label><input type="radio" name="health_hospitalized_c2" value="Yes"> Y</label><label><input type="radio" name="health_hospitalized_c2" value="No"> N</label></div></td></tr>
+              <tr><td>Cancer, kidney disease, diabetes, leukemia, MS, paralysis, chest pains, heart/blood vessel disease, lung/liver disease, emphysema, stroke, or high blood pressure</td><td><div class="health-yn"><label><input type="radio" name="health_chronic_c1" value="Yes"> Y</label><label><input type="radio" name="health_chronic_c1" value="No"> N</label></div></td><td><div class="health-yn"><label><input type="radio" name="health_chronic_c2" value="Yes"> Y</label><label><input type="radio" name="health_chronic_c2" value="No"> N</label></div></td></tr>
+              <tr><td>Currently taking prescription medications or receiving medical treatment</td><td><div class="health-yn"><label><input type="radio" name="health_rx_c1" value="Yes"> Y</label><label><input type="radio" name="health_rx_c1" value="No"> N</label></div></td><td><div class="health-yn"><label><input type="radio" name="health_rx_c2" value="Yes"> Y</label><label><input type="radio" name="health_rx_c2" value="No"> N</label></div></td></tr>
+              <tr><td>Tobacco use in the past 12 months</td><td><div class="health-yn"><label><input type="radio" name="health_tobacco_c1" value="Yes"> Y</label><label><input type="radio" name="health_tobacco_c1" value="No"> N</label></div></td><td><div class="health-yn"><label><input type="radio" name="health_tobacco_c2" value="Yes"> Y</label><label><input type="radio" name="health_tobacco_c2" value="No"> N</label></div></td></tr>
             </tbody>
           </table>
         </div>
@@ -1087,12 +702,10 @@
         <div class="q-row">
           <div>
             <label class="q-label" for="health_notes_c1">Client 1 — Health Notes &amp; Rx</label>
-            <div class="q-hint">Diagnoses, ongoing treatments, medications</div>
             <textarea id="health_notes_c1" name="health_notes_c1" placeholder="Conditions, medications, relevant history..." maxlength="1000"></textarea>
           </div>
           <div>
             <label class="q-label" for="health_notes_c2">Client 2 — Health Notes &amp; Rx</label>
-            <div class="q-hint">Diagnoses, ongoing treatments, medications</div>
             <textarea id="health_notes_c2" name="health_notes_c2" placeholder="Conditions, medications, relevant history..." maxlength="1000"></textarea>
           </div>
         </div>
@@ -1104,39 +717,36 @@
       </div>
     </div>
 
-    <!-- ══ SECTION 5: GOALS ══ -->
+    <!-- ══ SECTION 5 ══ -->
     <div class="section" id="s5">
       <div class="section-badge">Section 5 · Goals, Priorities &amp; Acknowledgment</div>
       <div class="section-title">What does success look like for you?</div>
-      <div class="section-intro">Every great plan starts with clarity about the destination. We want to understand what matters most — not just financially, but what you want your life and legacy to look like. We plan with the end in mind.</div>
+      <div class="section-intro">Every great plan starts with clarity about the destination. We want to understand what matters most — not just financially, but what you want your life and legacy to look like.</div>
 
       <div class="q-group">
         <label class="q-label" for="financial_goals">What are your most important financial and life goals?</label>
-        <div class="q-hint">"If we were sitting here three years from now and you said 'this was worth it' — what would need to be true?"</div>
-        <textarea id="financial_goals" name="financial_goals" style="min-height:100px;" placeholder="e.g. Retire comfortably without running out of money · Leave something meaningful for my children · Protect my spouse if I go first · Reduce taxes · Ensure my business continues · Pay for grandchildren's education..." maxlength="3000"></textarea>
+        <textarea id="financial_goals" name="financial_goals" style="min-height:100px;" placeholder="e.g. Retire comfortably · Leave something meaningful for my children · Protect my spouse · Reduce taxes..." maxlength="3000"></textarea>
       </div>
 
       <div class="q-group">
         <label class="q-label" for="biggest_concerns">What worries you most about your current situation?</label>
-        <div class="q-hint">"What concerns you most if nothing changes?"</div>
-        <textarea id="biggest_concerns" name="biggest_concerns" style="min-height:80px;" placeholder="e.g. Outliving my money · A health crisis draining our savings · My family fighting over assets · Documents being out of date · Not knowing if we have enough..." maxlength="2000"></textarea>
+        <textarea id="biggest_concerns" name="biggest_concerns" style="min-height:80px;" placeholder="e.g. Outliving my money · A health crisis · My family fighting over assets · Not knowing if we have enough..." maxlength="2000"></textarea>
       </div>
 
       <div class="q-group">
-        <label class="q-label" for="additional_notes">Is there anything else you want us to know before we begin?</label>
-        <div class="q-hint">Anything not yet covered — recent life changes, strong opinions, family dynamics, ongoing legal matters, or planning preferences.</div>
-        <textarea id="additional_notes" name="additional_notes" style="min-height:80px;" placeholder="Family considerations, recent changes (divorce, death in family, inheritance), business transitions, planning preferences..." maxlength="2000"></textarea>
+        <label class="q-label" for="additional_notes">Is there anything else you want us to know?</label>
+        <textarea id="additional_notes" name="additional_notes" style="min-height:80px;" placeholder="Recent life changes, strong opinions, family dynamics, ongoing legal matters, planning preferences..." maxlength="2000"></textarea>
       </div>
 
       <hr class="divider" />
 
       <div style="background:var(--bg-soft); border:1px solid var(--border); border-radius:var(--radius); padding:1rem 1.25rem; font-size:12px; color:var(--text-muted); line-height:1.7;">
         <strong style="font-weight:600; color:var(--text); display:block; margin-bottom:4px;">Confidentiality Acknowledgment</strong>
-        All information provided in this questionnaire is strictly confidential and is used solely for financial and estate planning purposes by TWLS Group and its affiliated advisors. This information will not be shared with third parties without your express written consent. By completing this form you acknowledge that TWLS Group acts in a fiduciary capacity in collecting and using this information for your planning benefit.
+        All information provided is strictly confidential and used solely for financial and estate planning purposes by TWLS Group and its affiliated advisors. This information will not be shared with third parties without your express written consent.
       </div>
 
       <div class="nav-row">
-        <button class="btn btn-back" onclick="goTo(4)">← Back to Review</button>
+        <button class="btn btn-back" onclick="goTo(4)">← Back</button>
         <button class="btn btn-next" onclick="goTo(6)">Review &amp; Submit →</button>
       </div>
     </div>
@@ -1144,20 +754,23 @@
     <!-- ══ SECTION 6: SUBMIT ══ -->
     <div class="section" id="s6">
 
-      <!-- Pre-submit panel -->
       <div class="complete-wrap" id="submit-panel">
         <div class="complete-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C17F3A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"/>
-          </svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C17F3A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
         <div class="complete-title">All done — ready to submit</div>
-        <div class="complete-sub">Your responses are complete. When you click the button below, your information will be sent securely to the TWLS Group team. You'll see a confirmation message right here on screen.</div>
+        <div class="complete-sub">Your responses are complete. When you click Submit below, your information will be sent securely to the TWLS Group team and a new contact will be created in our system.</div>
 
-        <button class="btn-pdf" id="submit-btn" onclick="submitForm()">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          Submit to TWLS Group
-        </button>
+        <div class="action-row">
+          <button class="btn-print" onclick="printForm()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Print / Save PDF
+          </button>
+          <button class="btn-pdf" id="submit-btn" onclick="submitForm()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Submit to TWLS Group
+          </button>
+        </div>
 
         <div style="margin-top:0.75rem; font-size:11px; color:var(--text-light);">
           Your information is encrypted and sent securely — it goes directly to our team and nowhere else.
@@ -1167,19 +780,24 @@
       <!-- Success panel -->
       <div class="complete-wrap" id="success-panel" style="display:none;">
         <div class="complete-icon" style="background:var(--copper);">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"/>
-          </svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
         <div class="complete-title">Thank you — we've received your information!</div>
-        <div class="complete-sub" style="margin-bottom:1.5rem;">A member of the TWLS Group team will be in touch with you shortly to schedule your planning appointment. In the meantime, here are a few things you can do to prepare:</div>
+        <div class="complete-sub">A member of the TWLS Group team will be in touch shortly to schedule your planning appointment.</div>
+
+        <div class="action-row" style="margin-bottom:1.5rem;">
+          <button class="btn-print" onclick="printForm()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Print / Save PDF Copy
+          </button>
+        </div>
 
         <div class="next-steps">
           <h3>Next steps before your appointment</h3>
-          <div class="step-item"><div class="step-num">1</div><div>Gather any existing estate documents (will, trust, powers of attorney) to bring to the meeting</div></div>
-          <div class="step-item"><div class="step-num">2</div><div>Locate recent account statements for any financial accounts not fully described above</div></div>
-          <div class="step-item"><div class="step-num">3</div><div>Review beneficiary designations on retirement accounts and life insurance — we'll confirm these together</div></div>
-          <div class="step-item"><div class="step-num">4</div><div>Note any questions that come to mind before the meeting — no question is too small</div></div>
+          <div class="step-item"><div class="step-num">1</div><div>Gather any existing estate documents (will, trust, powers of attorney)</div></div>
+          <div class="step-item"><div class="step-num">2</div><div>Locate recent account statements for any financial accounts</div></div>
+          <div class="step-item"><div class="step-num">3</div><div>Review beneficiary designations on retirement accounts and life insurance</div></div>
+          <div class="step-item"><div class="step-num">4</div><div>Note any questions that come to mind — no question is too small</div></div>
         </div>
 
         <div style="padding:1rem; background:var(--bg-soft); border:1px solid var(--border); border-radius:var(--radius); font-size:13px; color:var(--text-muted); margin-top:1.5rem;">
@@ -1191,15 +809,17 @@
       <!-- Error panel -->
       <div class="complete-wrap" id="error-panel" style="display:none;">
         <div class="complete-icon" style="background:#c0392b;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
-          </svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         </div>
         <div class="complete-title">Something went wrong</div>
-        <div class="complete-sub">We're sorry — your submission didn't go through. Please try again or call us directly at <strong>409.377.8060</strong> and we'll be happy to help.</div>
-        <button class="btn-pdf" onclick="resetToSubmit()" style="margin-top:1rem;">
-          Try Again
-        </button>
+        <div class="complete-sub">We're sorry — your submission didn't go through. Please try again or call us directly at <strong>409.377.8060</strong>.</div>
+        <div class="action-row">
+          <button class="btn-print" onclick="printForm()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Print / Save PDF
+          </button>
+          <button class="btn-pdf" onclick="resetToSubmit()">Try Again</button>
+        </div>
       </div>
 
       <div class="nav-row" id="back-nav">
@@ -1207,415 +827,393 @@
       </div>
     </div>
 
-  </div><!-- /form-body -->
-</div><!-- /form-card -->
-</div><!-- /screen-wrap -->
+  </div>
+</div>
+</div>
 
 <script>
-  // ════════════════════════════════════════════════════════════
-  // CONFIGURATION
-  // ════════════════════════════════════════════════════════════
-  const WEBHOOK_URL = 'https://hook.us2.make.com/okg5wen41sny9mylqteo75rd702ba4hs';
+// ══════════════════════════════════════════════════════════════
+// ⚙️  CONFIGURATION — update these values before deploying
+// ══════════════════════════════════════════════════════════════
+const CONFIG = {
+  // Your existing Make.com webhook (handles email + relay)
+  MAKE_WEBHOOK_URL: 'https://hook.us2.make.com/okg5wen41sny9mylqteo75rd702ba4hs',
 
-  // ════════════════════════════════════════════════════════════
-  // STATE STORE — yn/ynSimple button values keyed by field name
-  // ════════════════════════════════════════════════════════════
-  const buttonState = {};
+  // Wealthbox API token — paste your token here
+  // Get it: Wealthbox → Settings → API Access → Generate Token
+  WEALTHBOX_API_TOKEN: '621a5b77c3f94f12a4a390395c712fd5',
 
-  // ════════════════════════════════════════════════════════════
-  // NAVIGATION
-  // ════════════════════════════════════════════════════════════
-  function goTo(n) {
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    document.getElementById('s' + n).classList.add('active');
-    const total = 5;
-    const pct = n > total ? 100 : Math.round(((n - 1) / total) * 100);
-    document.getElementById('prog-fill').style.width = pct + '%';
-    document.getElementById('prog-pct').textContent = pct + '%';
-    document.getElementById('prog-label').textContent = n > total ? 'Complete' : 'Section ' + n + ' of ' + total;
-    document.querySelectorAll('.p-step').forEach((el, i) => {
-      el.classList.remove('current', 'done');
-      if (i + 1 === n) el.classList.add('current');
-      else if (i + 1 < n) el.classList.add('done');
-    });
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  // The email address that receives the notification (set in Make.com,
+  // but we send it in the payload so Make can route it)
+  NOTIFICATION_EMAIL: 'gdannar@tubreauxs.com',
+};
+// ══════════════════════════════════════════════════════════════
 
-  // ════════════════════════════════════════════════════════════
-  // SECTION 1 VALIDATION + NAVIGATION
-  // ════════════════════════════════════════════════════════════
-  function nextSection(from, to) {
-    if (from === 1) {
-      if (!validateSection1()) return;
-    }
-    goTo(to);
-  }
+// ── STATE ──
+const buttonState = {};
 
-  function validateSection1() {
-    let valid = true;
-    const banner = document.getElementById('s1-error');
+// ── TOAST ──
+function toast(msg, type = 'info', duration = 4000) {
+  const el  = document.getElementById('status-toast');
+  const msgEl = document.getElementById('toast-msg');
+  const icon  = document.getElementById('toast-icon');
+  el.className = 'show toast-' + type;
+  msgEl.textContent = msg;
+  if (type === 'success') icon.setAttribute('d', 'M20 6 9 17 4 12');
+  else if (type === 'error') icon.setAttribute('d', 'M18 6 6 18M6 6l12 12');
+  else icon.setAttribute('d', 'M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83');
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.classList.remove('show'), duration);
+}
 
-    // Required text fields
-    const required = [
-      { id: 'c1_first_name', msg: "Please enter Client 1's first name." },
-      { id: 'c1_last_name',  msg: "Please enter Client 1's last name." },
-      { id: 'c1_phone',      msg: "Please enter a valid phone number." },
-      { id: 'c1_email',      msg: "Please enter a valid email address." },
-    ];
+// ── NAVIGATION ──
+function goTo(n) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById('s' + n).classList.add('active');
+  const total = 5;
+  const pct = n > total ? 100 : Math.round(((n - 1) / total) * 100);
+  document.getElementById('prog-fill').style.width = pct + '%';
+  document.getElementById('prog-pct').textContent = pct + '%';
+  document.getElementById('prog-label').textContent = n > total ? 'Complete' : 'Section ' + n + ' of ' + total;
+  document.querySelectorAll('.p-step').forEach((el, i) => {
+    el.classList.remove('current', 'done');
+    if (i + 1 === n) el.classList.add('current');
+    else if (i + 1 < n) el.classList.add('done');
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-    required.forEach(({ id, msg }) => {
-      const el = document.getElementById(id);
-      const errEl = document.getElementById(id + '-err');
-      const val = sanitizeText(el.value);
-      let fieldOk = val.length > 0;
+function nextSection(from, to) {
+  if (from === 1 && !validateSection1()) return;
+  goTo(to);
+}
 
-      // Extra validation
-      if (fieldOk && id === 'c1_email') fieldOk = isValidEmail(val);
-      if (fieldOk && id === 'c1_phone') fieldOk = isValidPhone(val);
-
-      if (!fieldOk) {
-        markError(el, errEl, msg);
-        valid = false;
-      } else {
-        clearError(el, errEl);
-      }
-    });
-
-    // Optional email Client 2 — only validate format if filled
-    const c2email = document.getElementById('c2_email');
-    const c2emailErr = document.getElementById('c2_email-err');
-    if (c2email.value.trim()) {
-      if (!isValidEmail(c2email.value.trim())) {
-        markError(c2email, c2emailErr, 'Please enter a valid email address for Client 2.');
-        valid = false;
-      } else {
-        clearError(c2email, c2emailErr);
-      }
-    }
-
-    banner.classList.toggle('visible', !valid);
-    return valid;
-  }
-
-  function markError(el, errEl, msg) {
-    el.classList.add('field-error');
-    el.classList.remove('field-valid');
-    if (errEl) { errEl.textContent = msg; errEl.classList.add('visible'); }
-  }
-
-  function clearError(el, errEl) {
-    el.classList.remove('field-error');
-    el.classList.add('field-valid');
-    if (errEl) errEl.classList.remove('visible');
-  }
-
-  // ════════════════════════════════════════════════════════════
-  // YES/NO BUTTON HANDLERS
-  // ════════════════════════════════════════════════════════════
-  function yn(btn, key, val) {
-    const parent = btn.closest('.q-group');
-    parent.querySelectorAll('.yn-btn[data-field="' + btn.dataset.field + '"]').forEach(b => {
-      b.className = 'yn-btn';
-    });
-    btn.classList.add('sel-' + val);
-    // Store value
-    if (btn.dataset.field) buttonState[btn.dataset.field] = btn.dataset.val;
-    const sub = document.getElementById(key + '-sub');
-    if (sub) sub.style.display = val === 'yes' ? 'block' : 'none';
-  }
-
-  function ynSimple(btn, field) {
-    const parent = btn.parentElement;
-    const fieldKey = field || btn.dataset.field;
-    parent.querySelectorAll('.yn-btn').forEach(b => {
-      b.className = 'yn-btn';
-    });
-    const txt = btn.textContent.trim().toLowerCase();
-    if (txt === 'yes' || txt === 'yes, fully funded') btn.classList.add('sel-yes');
-    else if (txt === 'no' || txt === 'no (renting)') btn.classList.add('sel-no');
-    else btn.classList.add('sel-unsure');
-    // Store value
-    if (fieldKey) buttonState[fieldKey] = btn.dataset.val || btn.textContent.trim();
-  }
-
-  // ════════════════════════════════════════════════════════════
-  // SANITIZATION HELPERS
-  // ════════════════════════════════════════════════════════════
-  function sanitizeText(str) {
-    if (typeof str !== 'string') return '';
-    // Trim whitespace, strip any HTML tags
-    return str.trim().replace(/<[^>]*>/g, '').substring(0, 5000);
-  }
-
-  function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
-  function isValidPhone(phone) {
-    // Allow digits, spaces, dashes, parens, +
-    return /^[\d\s\-().+]{7,20}$/.test(phone.trim());
-  }
-
-  // ════════════════════════════════════════════════════════════
-  // COLLECT FORM DATA — structured, sanitized, well-labeled
-  // ════════════════════════════════════════════════════════════
-  function collectFormData() {
-    const data = {};
-
-    // Collect all named inputs
-    document.querySelectorAll('input[name], textarea[name], select[name]').forEach(el => {
-      const key = el.name;
-      if (!key) return;
-      const val = sanitizeText(el.value);
-      if (val) data[key] = val;
-    });
-
-    // Collect radio buttons
-    const radioGroups = {};
-    document.querySelectorAll('input[type=radio]:checked').forEach(rb => {
-      radioGroups[rb.name] = rb.value;
-    });
-    Object.assign(data, radioGroups);
-
-    // Merge yn/ynSimple button state
-    Object.assign(data, buttonState);
-
-    // ── BUILD WEALTHBOX-READY NOTE ──────────────────────────
-    const c1Name = [data.c1_first_name, data.c1_last_name].filter(Boolean).join(' ') || '(not provided)';
-    const c2Name = [data.c2_first_name, data.c2_last_name].filter(Boolean).join(' ');
-    const now = new Date();
-    const dateStr = now.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
-    const timeStr = now.toLocaleTimeString('en-US', { hour:'2-digit', minute:'2-digit' });
-
-    const L = []; // lines
-    const line  = (s='') => L.push(s);
-    const head  = (s)    => { line(); line('═'.repeat(50)); line('  ' + s.toUpperCase()); line('═'.repeat(50)); };
-    const sub   = (s)    => { line(); line('── ' + s + ' ──'); };
-    const field = (label, val) => { if (val) L.push('  ' + label + ': ' + val); };
-
-    line('TWLS CONFIDENTIAL PLANNING QUESTIONNAIRE');
-    line('Submitted: ' + dateStr + ' at ' + timeStr);
-    line('━'.repeat(50));
-
-    head('1. CLIENT IDENTIFICATION');
-    field('Client 1', c1Name);
-    field('Client 2', c2Name || 'N/A');
-    field('C1 Phone', data.c1_phone);
-    field('C1 Email', data.c1_email);
-    field('C1 Address', data.c1_address);
-    field('C2 Phone', data.c2_phone);
-    field('C2 Email', data.c2_email);
-    field('C2 Address', data.c2_address);
-
-    if (data.family_members)      { sub('Family Members & Dependents'); line('  ' + data.family_members); }
-    if (data.family_circumstances) { sub('Special Family Circumstances'); line('  ' + data.family_circumstances); }
-    if (data.appt_first)           field('Preferred 1st Appointment', data.appt_first);
-    if (data.appt_second)          field('Preferred 2nd Appointment', data.appt_second);
-
-    head('2. ESTATE PLANNING & LEGAL DOCUMENTS');
-    field('Has Will', data.will);
-    if (data.will === 'Yes') {
-      field('  Will — Year Created', data.will_year_created);
-      field('  Will — Last Reviewed', data.will_last_reviewed);
-      field('  Will — Attorney/Firm', data.will_attorney);
-    }
-    field('Has Revocable Living Trust', data.trust);
-    if (data.trust === 'Yes') {
-      field('  Trust — Year Created', data.trust_year_created);
-      field('  Trust — Last Reviewed', data.trust_last_reviewed);
-      field('  Trust — Fully Funded', data.trust_funded);
-    }
-    field('Number of Beneficiaries', data.beneficiary_count);
-
-    sub('Beneficiaries');
-    field('C1 Primary Beneficiaries', data.c1_primary_benes);
-    field('C1 Secondary Beneficiaries', data.c1_secondary_benes);
-    field('C2 Primary Beneficiaries', data.c2_primary_benes);
-    field('C2 Secondary Beneficiaries', data.c2_secondary_benes);
-
-    sub('Legal Authorization');
-    field('C1 Financial POA', data.fpoa_c1);
-    field('C2 Financial POA', data.fpoa_c2);
-    field('C1 Healthcare POA', data.hpoa_c1);
-    field('C2 Healthcare POA', data.hpoa_c2);
-    field('C1 Living Will / Advance Directive', data.livingwill_c1);
-    field('C2 Living Will / Advance Directive', data.livingwill_c2);
-
-    field('Out-of-State Real Estate', data.outstate_real_estate);
-    if (data.outstate_locations)  field('  Locations', data.outstate_locations);
-    field('Digital Assets Documented', data.digital_assets);
-    field('Owns a Business', data.owns_business);
-    if (data.buysell_plan) field('  Buy-Sell / Succession Plan', data.buysell_plan);
-    if (data.estate_concerns) { sub('Estate Planning Concerns'); line('  ' + data.estate_concerns); }
-
-    head('3. INCOME & ASSETS');
-    sub('Monthly Income');
-    const incomeLabels = [
-      ['Pension — C1', data.income_pension_c1],   ['Pension — C2', data.income_pension_c2],
-      ['Social Security — C1', data.income_ss_c1],['Social Security — C2', data.income_ss_c2],
-      ['IRA/Retirement — C1', data.income_ira_c1],['IRA/Retirement — C2', data.income_ira_c2],
-      ['Investment/Interest — C1', data.income_invest_c1],['Investment/Interest — C2', data.income_invest_c2],
-      ['Other — C1', data.income_other_c1],        ['Other — C2', data.income_other_c2],
-      ['Total Annual — C1', data.income_annual_c1],['Total Annual — C2', data.income_annual_c2],
-    ];
-    incomeLabels.forEach(([lbl, val]) => field(lbl, val));
-
-    sub('Real Estate');
-    field('Owns Home', data.owns_home);
-    if (data.owns_home === 'Yes') {
-      field('  Home Value', data.home_value);
-      field('  Mortgage Balance', data.home_mortgage);
-      field('  County / State', data.home_county);
-    }
-    if (data.additional_properties) { line('  Additional Properties:'); line('  ' + data.additional_properties.replace(/\n/g, '\n  ')); }
-
-    if (data.secure_accounts) { sub('Secure / Low-Risk Accounts'); line('  ' + data.secure_accounts.replace(/\n/g, '\n  ')); }
-    if (data.life_insurance_annuities) { sub('Life Insurance & Fixed Annuities'); line('  ' + data.life_insurance_annuities.replace(/\n/g, '\n  ')); }
-    if (data.investment_accounts) { sub('Investment / Market Accounts'); line('  ' + data.investment_accounts.replace(/\n/g, '\n  ')); }
-
-    field('Liquidity Reserve Preference', data.liquidity_reserve);
-    field('Current Tax Rate', data.tax_rate);
-    field('Taxable SS Benefit', data.taxable_ss);
-
-    head('4. HEALTHCARE & LONG-TERM CARE');
-    field('Has Long-Term Care Insurance', data.has_ltc);
-    if (data.has_ltc === 'Yes') {
-      field('  LTC Carrier', data.ltc_carrier);
-      field('  LTC Type', data.ltc_type);
-      field('  LTC Issue Date', data.ltc_date);
-      field('  LTC Premium', data.ltc_premium);
-    }
-    sub('Medicare Supplement');
-    field('C1 Medigap Plan', data.medigap_c1_plan);
-    field('C1 Medigap Premium', data.medigap_c1_premium);
-    field('C1 Rx Plan', data.medigap_c1_rx);
-    field('C2 Medigap Plan', data.medigap_c2_plan);
-    field('C2 Medigap Premium', data.medigap_c2_premium);
-    field('C2 Rx Plan', data.medigap_c2_rx);
-
-    field('C1 Date of Birth', data.c1_dob);
-    field('C2 Date of Birth', data.c2_dob);
-
-    sub('Health History — Client 1');
-    const healthLabels = [
-      ['Serious illness/surgery (12 mo)', 'health_serious_c1'],
-      ['Alzheimer\'s / dementia', 'health_dementia_c1'],
-      ['HIV/AIDS', 'health_hiv_c1'],
-      ['Insurance difficulty', 'health_insur_denied_c1'],
-      ['Hospitalized (5 yrs)', 'health_hospitalized_c1'],
-      ['Chronic conditions', 'health_chronic_c1'],
-      ['Rx / treatment', 'health_rx_c1'],
-      ['Tobacco use (12 mo)', 'health_tobacco_c1'],
-    ];
-    healthLabels.forEach(([lbl, key]) => field(lbl, data[key]));
-    if (data.health_notes_c1) { line('  Notes: ' + data.health_notes_c1); }
-
-    sub('Health History — Client 2');
-    const healthLabelsC2 = [
-      ['Serious illness/surgery (12 mo)', 'health_serious_c2'],
-      ['Alzheimer\'s / dementia', 'health_dementia_c2'],
-      ['HIV/AIDS', 'health_hiv_c2'],
-      ['Insurance difficulty', 'health_insur_denied_c2'],
-      ['Hospitalized (5 yrs)', 'health_hospitalized_c2'],
-      ['Chronic conditions', 'health_chronic_c2'],
-      ['Rx / treatment', 'health_rx_c2'],
-      ['Tobacco use (12 mo)', 'health_tobacco_c2'],
-    ];
-    healthLabelsC2.forEach(([lbl, key]) => field(lbl, data[key]));
-    if (data.health_notes_c2) { line('  Notes: ' + data.health_notes_c2); }
-
-    head('5. GOALS & PRIORITIES');
-    if (data.financial_goals)  { sub('Financial & Life Goals');  line('  ' + data.financial_goals); }
-    if (data.biggest_concerns) { sub('Biggest Concerns');        line('  ' + data.biggest_concerns); }
-    if (data.additional_notes) { sub('Additional Notes');        line('  ' + data.additional_notes); }
-
-    line();
-    line('━'.repeat(50));
-    line('Submitted via TWLS Group Confidential Questionnaire');
-    line('Submitted at: ' + now.toISOString());
-
-    data.wealthbox_note  = L.join('\n');
-    data.submitted_at    = now.toISOString();
-    data.client_1_name   = c1Name;
-    data.client_2_name   = c2Name || '';
-    data.client_1_email  = data.c1_email || '';
-    data.client_1_phone  = data.c1_phone || '';
-
-    return data;
-  }
-
-  // ════════════════════════════════════════════════════════════
-  // SUBMIT
-  // ════════════════════════════════════════════════════════════
-  function submitForm() {
-    const btn = document.getElementById('submit-btn');
-    btn.disabled = true;
-    btn.innerHTML = '<span class="spinner"></span> Sending...';
-
-    let data;
-    try {
-      data = collectFormData();
-    } catch (e) {
-      console.error('Data collection error:', e);
-      showError(btn);
-      return;
-    }
-
-    fetch(WEBHOOK_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    })
-    .then(res => {
-      if (res.ok) {
-        document.getElementById('submit-panel').style.display  = 'none';
-        document.getElementById('success-panel').style.display = 'block';
-        document.getElementById('back-nav').style.display      = 'none';
-      } else {
-        throw new Error('Server returned ' + res.status);
-      }
-    })
-    .catch(err => {
-      console.error('Submission error:', err);
-      showError(btn);
-    });
-  }
-
-  function showError(btn) {
-    btn.disabled = false;
-    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Submit to TWLS Group';
-    document.getElementById('submit-panel').style.display = 'none';
-    document.getElementById('error-panel').style.display  = 'block';
-  }
-
-  function resetToSubmit() {
-    document.getElementById('error-panel').style.display  = 'none';
-    document.getElementById('submit-panel').style.display = 'block';
-  }
-
-  // ════════════════════════════════════════════════════════════
-  // REAL-TIME VALIDATION (blur events on required fields)
-  // ════════════════════════════════════════════════════════════
-  ['c1_first_name','c1_last_name','c1_phone','c1_email'].forEach(id => {
+// ── VALIDATION ──
+function validateSection1() {
+  let valid = true;
+  const banner = document.getElementById('s1-error');
+  const required = [
+    { id: 'c1_first_name', msg: "Please enter Client 1's first name." },
+    { id: 'c1_last_name',  msg: "Please enter Client 1's last name." },
+    { id: 'c1_phone',      msg: "Please enter a valid phone number." },
+    { id: 'c1_email',      msg: "Please enter a valid email address." },
+  ];
+  required.forEach(({ id, msg }) => {
     const el = document.getElementById(id);
-    if (!el) return;
-    el.addEventListener('blur', () => {
-      const val = sanitizeText(el.value);
-      const errEl = document.getElementById(id + '-err');
-      let ok = val.length > 0;
-      if (ok && id === 'c1_email') ok = isValidEmail(val);
-      if (ok && id === 'c1_phone') ok = isValidPhone(val);
-      if (!ok) markError(el, errEl, errEl ? errEl.textContent : '');
-      else clearError(el, errEl);
+    const errEl = document.getElementById(id + '-err');
+    const val = sanitize(el.value);
+    let ok = val.length > 0;
+    if (ok && id === 'c1_email') ok = validEmail(val);
+    if (ok && id === 'c1_phone') ok = validPhone(val);
+    ok ? clearErr(el, errEl) : markErr(el, errEl, msg) && (valid = false);
+    if (!ok) valid = false;
+  });
+  const c2e = document.getElementById('c2_email');
+  const c2eErr = document.getElementById('c2_email-err');
+  if (c2e.value.trim() && !validEmail(c2e.value.trim())) {
+    markErr(c2e, c2eErr, 'Please enter a valid email for Client 2.');
+    valid = false;
+  } else if (c2e.value.trim()) clearErr(c2e, c2eErr);
+  banner.classList.toggle('visible', !valid);
+  return valid;
+}
+
+function markErr(el, errEl, msg) { el.classList.add('field-error'); el.classList.remove('field-valid'); if (errEl) { errEl.textContent = msg; errEl.classList.add('visible'); } }
+function clearErr(el, errEl) { el.classList.remove('field-error'); el.classList.add('field-valid'); if (errEl) errEl.classList.remove('visible'); }
+
+// ── YES/NO ──
+function yn(btn, key, val) {
+  btn.closest('.q-group').querySelectorAll('.yn-btn[data-field="' + btn.dataset.field + '"]').forEach(b => b.className = 'yn-btn');
+  btn.classList.add('sel-' + val);
+  if (btn.dataset.field) buttonState[btn.dataset.field] = btn.dataset.val;
+  const sub = document.getElementById(key + '-sub');
+  if (sub) sub.style.display = val === 'yes' ? 'block' : 'none';
+}
+
+function ynSimple(btn, field) {
+  const fieldKey = field || btn.dataset.field;
+  btn.parentElement.querySelectorAll('.yn-btn').forEach(b => b.className = 'yn-btn');
+  const txt = btn.textContent.trim().toLowerCase();
+  btn.classList.add(txt === 'yes' || txt === 'yes, fully funded' ? 'sel-yes' : (txt === 'no' || txt === 'no (renting)' ? 'sel-no' : 'sel-unsure'));
+  if (fieldKey) buttonState[fieldKey] = btn.dataset.val || btn.textContent.trim();
+}
+
+// ── HELPERS ──
+function sanitize(s) { return (typeof s === 'string') ? s.trim().replace(/<[^>]*>/g, '').substring(0, 5000) : ''; }
+function validEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+function validPhone(p) { return /^[\d\s\-().+]{7,20}$/.test(p.trim()); }
+
+// ── PRINT ──
+function printForm() {
+  // Show all sections for printing
+  document.querySelectorAll('.section').forEach(s => s.setAttribute('data-was-hidden', s.classList.contains('active') ? 'no' : 'yes'));
+  document.querySelectorAll('.section').forEach(s => s.classList.add('active'));
+  window.print();
+  // Restore
+  setTimeout(() => {
+    document.querySelectorAll('.section').forEach(s => {
+      if (s.getAttribute('data-was-hidden') === 'yes') s.classList.remove('active');
     });
+  }, 500);
+}
+
+// ── COLLECT DATA ──
+function collectFormData() {
+  const data = {};
+  document.querySelectorAll('input[name], textarea[name], select[name]').forEach(el => {
+    const val = sanitize(el.value);
+    if (val) data[el.name] = val;
+  });
+  document.querySelectorAll('input[type=radio]:checked').forEach(rb => { data[rb.name] = rb.value; });
+  Object.assign(data, buttonState);
+
+  const c1Name = [data.c1_first_name, data.c1_last_name].filter(Boolean).join(' ') || '(not provided)';
+  const c2Name = [data.c2_first_name, data.c2_last_name].filter(Boolean).join(' ');
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+  const timeStr = now.toLocaleTimeString('en-US', { hour:'2-digit', minute:'2-digit' });
+
+  const L = [];
+  const line  = (s='') => L.push(s);
+  const head  = (s)    => { line(); line('═'.repeat(50)); line('  ' + s.toUpperCase()); line('═'.repeat(50)); };
+  const sub   = (s)    => { line(); line('── ' + s + ' ──'); };
+  const field = (lbl, val) => { if (val) L.push('  ' + lbl + ': ' + val); };
+
+  line('TWLS CONFIDENTIAL PLANNING QUESTIONNAIRE');
+  line('Submitted: ' + dateStr + ' at ' + timeStr);
+  line('━'.repeat(50));
+
+  head('1. CLIENT IDENTIFICATION');
+  field('Client 1', c1Name); field('Client 2', c2Name || 'N/A');
+  field('C1 Phone', data.c1_phone); field('C1 Email', data.c1_email); field('C1 Address', data.c1_address);
+  field('C2 Phone', data.c2_phone); field('C2 Email', data.c2_email); field('C2 Address', data.c2_address);
+  if (data.family_members) { sub('Family Members'); line('  ' + data.family_members); }
+  if (data.family_circumstances) { sub('Special Circumstances'); line('  ' + data.family_circumstances); }
+  field('Preferred 1st Appt', data.appt_first); field('Preferred 2nd Appt', data.appt_second);
+
+  head('2. ESTATE PLANNING');
+  field('Has Will', data.will);
+  if (data.will === 'Yes') { field('  Will Year', data.will_year_created); field('  Will Last Reviewed', data.will_last_reviewed); field('  Attorney', data.will_attorney); }
+  field('Has Trust', data.trust);
+  if (data.trust === 'Yes') { field('  Trust Year', data.trust_year_created); field('  Trust Last Reviewed', data.trust_last_reviewed); field('  Trust Funded', data.trust_funded); }
+  field('Beneficiary Count', data.beneficiary_count);
+  sub('Beneficiaries');
+  field('C1 Primary', data.c1_primary_benes); field('C1 Secondary', data.c1_secondary_benes);
+  field('C2 Primary', data.c2_primary_benes); field('C2 Secondary', data.c2_secondary_benes);
+  sub('Legal Docs');
+  field('C1 FPOA', data.fpoa_c1); field('C2 FPOA', data.fpoa_c2);
+  field('C1 HPOA', data.hpoa_c1); field('C2 HPOA', data.hpoa_c2);
+  field('C1 Living Will', data.livingwill_c1); field('C2 Living Will', data.livingwill_c2);
+  field('Out-of-State RE', data.outstate_real_estate);
+  if (data.outstate_locations) field('  Locations', data.outstate_locations);
+  field('Digital Assets', data.digital_assets); field('Owns Business', data.owns_business);
+  if (data.buysell_plan) field('  Buy-Sell Plan', data.buysell_plan);
+  if (data.estate_concerns) { sub('Estate Concerns'); line('  ' + data.estate_concerns); }
+
+  head('3. INCOME & ASSETS');
+  sub('Monthly Income');
+  [['Pension C1',data.income_pension_c1],['Pension C2',data.income_pension_c2],['SS C1',data.income_ss_c1],['SS C2',data.income_ss_c2],['IRA C1',data.income_ira_c1],['IRA C2',data.income_ira_c2],['Invest C1',data.income_invest_c1],['Invest C2',data.income_invest_c2],['Other C1',data.income_other_c1],['Other C2',data.income_other_c2],['Annual C1',data.income_annual_c1],['Annual C2',data.income_annual_c2]].forEach(([l,v])=>field(l,v));
+  field('Owns Home', data.owns_home);
+  if (data.owns_home === 'Yes') { field('  Home Value', data.home_value); field('  Mortgage', data.home_mortgage); field('  County/State', data.home_county); }
+  if (data.additional_properties) { sub('Additional Properties'); line('  ' + data.additional_properties); }
+  if (data.secure_accounts) { sub('Secure Accounts'); line('  ' + data.secure_accounts); }
+  if (data.life_insurance_annuities) { sub('Life Insurance & Annuities'); line('  ' + data.life_insurance_annuities); }
+  if (data.investment_accounts) { sub('Investment Accounts'); line('  ' + data.investment_accounts); }
+  field('Tax Rate', data.tax_rate); field('Taxable SS', data.taxable_ss);
+
+  head('4. HEALTHCARE & LTC');
+  field('Has LTC Insurance', data.has_ltc);
+  if (data.has_ltc === 'Yes') { field('  LTC Carrier', data.ltc_carrier); field('  LTC Type', data.ltc_type); field('  LTC Date', data.ltc_date); field('  LTC Premium', data.ltc_premium); }
+  field('C1 Medigap Plan', data.medigap_c1_plan); field('C1 Medigap Premium', data.medigap_c1_premium);
+  field('C2 Medigap Plan', data.medigap_c2_plan); field('C2 Medigap Premium', data.medigap_c2_premium);
+  field('C1 DOB', data.c1_dob); field('C2 DOB', data.c2_dob);
+  sub('Health History — C1');
+  [['Serious illness',data.health_serious_c1],['Dementia',data.health_dementia_c1],['HIV',data.health_hiv_c1],['Insurance denied',data.health_insur_denied_c1],['Hospitalized',data.health_hospitalized_c1],['Chronic',data.health_chronic_c1],['Rx/treatment',data.health_rx_c1],['Tobacco',data.health_tobacco_c1]].forEach(([l,v])=>field(l,v));
+  if (data.health_notes_c1) line('  Notes: ' + data.health_notes_c1);
+  sub('Health History — C2');
+  [['Serious illness',data.health_serious_c2],['Dementia',data.health_dementia_c2],['HIV',data.health_hiv_c2],['Insurance denied',data.health_insur_denied_c2],['Hospitalized',data.health_hospitalized_c2],['Chronic',data.health_chronic_c2],['Rx/treatment',data.health_rx_c2],['Tobacco',data.health_tobacco_c2]].forEach(([l,v])=>field(l,v));
+  if (data.health_notes_c2) line('  Notes: ' + data.health_notes_c2);
+
+  head('5. GOALS & PRIORITIES');
+  if (data.financial_goals)  { sub('Financial & Life Goals'); line('  ' + data.financial_goals); }
+  if (data.biggest_concerns) { sub('Biggest Concerns'); line('  ' + data.biggest_concerns); }
+  if (data.additional_notes) { sub('Additional Notes'); line('  ' + data.additional_notes); }
+
+  line(); line('━'.repeat(50));
+  line('Submitted via TWLS Group Confidential Questionnaire');
+  line('ISO Timestamp: ' + now.toISOString());
+
+  data.wealthbox_note    = L.join('\n');
+  data.submitted_at      = now.toISOString();
+  data.client_1_name     = c1Name;
+  data.client_2_name     = c2Name || '';
+  data.client_1_email    = data.c1_email || '';
+  data.client_1_phone    = data.c1_phone || '';
+  data.notification_email = CONFIG.NOTIFICATION_EMAIL;
+  return data;
+}
+
+// ════════════════════════════════════════════════════════════
+// CREATE WEALTHBOX CONTACT
+// Called directly from the browser using your API token.
+// The Wealthbox API allows CORS from browser clients.
+// ════════════════════════════════════════════════════════════
+async function createWealthboxContact(formData) {
+  if (!CONFIG.WEALTHBOX_API_TOKEN || CONFIG.WEALTHBOX_API_TOKEN === 'YOUR_WEALTHBOX_API_TOKEN_HERE') {
+    console.warn('Wealthbox API token not configured — skipping contact creation.');
+    return { skipped: true };
+  }
+
+  const c1First = formData.c1_first_name || '';
+  const c1Last  = formData.c1_last_name  || '';
+  const c2First = formData.c2_first_name || '';
+  const c2Last  = formData.c2_last_name  || '';
+
+  // Build the contact payload for Client 1 (primary)
+  const contact = {
+    type: 'Person',
+    first_name: c1First,
+    last_name: c1Last,
+    email_addresses: formData.c1_email ? [{ address: formData.c1_email, kind: 'work' }] : [],
+    phone_numbers: formData.c1_phone ? [{ address: formData.c1_phone, kind: 'mobile' }] : [],
+    street_addresses: formData.c1_address ? [{ street: formData.c1_address, kind: 'home' }] : [],
+    background: formData.wealthbox_note,
+    tags: ['Intake Form', 'New Prospect'],
+  };
+
+  // Add spouse info to background if Client 2 exists
+  if (c2First || c2Last) {
+    contact.background = `Spouse/Co-Client: ${[c2First, c2Last].filter(Boolean).join(' ')}\n\n` + contact.background;
+  }
+
+  toast('Creating Wealthbox contact...', 'info', 8000);
+
+  const res = await fetch('https://api.crmworkspace.com/v1/contacts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'ACCESS_TOKEN': CONFIG.WEALTHBOX_API_TOKEN,
+    },
+    body: JSON.stringify(contact),
   });
 
-  // Phone auto-formatter for Client 1
-  document.getElementById('c1_phone').addEventListener('input', function() {
-    let v = this.value.replace(/\D/g, '');
-    if (v.length >= 10) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6,10);
-    this.value = v;
+  if (!res.ok) {
+    const errText = await res.text().catch(() => '');
+    throw new Error('Wealthbox API error ' + res.status + ': ' + errText);
+  }
+
+  const result = await res.json();
+
+  // If Client 2 exists, create a second contact and link as household
+  if ((c2First || c2Last) && (formData.c2_email || formData.c2_phone)) {
+    const contact2 = {
+      type: 'Person',
+      first_name: c2First,
+      last_name: c2Last,
+      email_addresses: formData.c2_email ? [{ address: formData.c2_email, kind: 'work' }] : [],
+      phone_numbers: formData.c2_phone ? [{ address: formData.c2_phone, kind: 'mobile' }] : [],
+      street_addresses: formData.c2_address ? [{ street: formData.c2_address, kind: 'home' }] : (formData.c1_address ? [{ street: formData.c1_address, kind: 'home' }] : []),
+      background: `Spouse/Co-Client of ${c1First} ${c1Last}. See primary contact for full intake notes.`,
+      tags: ['Intake Form', 'New Prospect'],
+    };
+    await fetch('https://api.crmworkspace.com/v1/contacts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'ACCESS_TOKEN': CONFIG.WEALTHBOX_API_TOKEN },
+      body: JSON.stringify(contact2),
+    }).catch(e => console.warn('Client 2 contact creation failed:', e));
+  }
+
+  return result;
+}
+
+// ════════════════════════════════════════════════════════════
+// SEND TO MAKE.COM (triggers email notification)
+// ════════════════════════════════════════════════════════════
+async function sendToMake(formData) {
+  const res = await fetch(CONFIG.MAKE_WEBHOOK_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData),
   });
+  if (!res.ok) throw new Error('Make webhook returned ' + res.status);
+  return true;
+}
+
+// ════════════════════════════════════════════════════════════
+// MAIN SUBMIT HANDLER
+// Runs both operations in parallel; tolerates partial failure
+// ════════════════════════════════════════════════════════════
+async function submitForm() {
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Sending...';
+
+  let formData;
+  try { formData = collectFormData(); }
+  catch (e) { console.error('Data collection error:', e); showError(btn); return; }
+
+  toast('Submitting your information...', 'info', 10000);
+
+  const [wbResult, makeResult] = await Promise.allSettled([
+    createWealthboxContact(formData),
+    sendToMake(formData),
+  ]);
+
+  const wbOk   = wbResult.status   === 'fulfilled';
+  const makeOk = makeResult.status === 'fulfilled';
+
+  if (wbResult.reason) console.warn('Wealthbox error:', wbResult.reason);
+  if (makeResult.reason) console.warn('Make.com error:', makeResult.reason);
+
+  if (makeOk || wbOk) {
+    // At least one succeeded — show success
+    document.getElementById('submit-panel').style.display = 'none';
+    document.getElementById('success-panel').style.display = 'block';
+    document.getElementById('back-nav').style.display = 'none';
+
+    if (wbOk && !wbResult.value?.skipped) {
+      toast('✓ Wealthbox contact created successfully!', 'success', 5000);
+    } else if (!wbOk) {
+      toast('Note: Wealthbox contact could not be created automatically. Data sent via webhook.', 'error', 6000);
+    }
+  } else {
+    showError(btn);
+  }
+}
+
+function showError(btn) {
+  btn.disabled = false;
+  btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Submit to TWLS Group';
+  document.getElementById('submit-panel').style.display = 'none';
+  document.getElementById('error-panel').style.display = 'block';
+  toast('Submission failed. Please try again or call 409.377.8060', 'error', 8000);
+}
+
+function resetToSubmit() {
+  document.getElementById('error-panel').style.display = 'none';
+  document.getElementById('submit-panel').style.display = 'block';
+}
+
+// ── REAL-TIME VALIDATION ──
+['c1_first_name','c1_last_name','c1_phone','c1_email'].forEach(id => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener('blur', () => {
+    const val = sanitize(el.value);
+    const errEl = document.getElementById(id + '-err');
+    let ok = val.length > 0;
+    if (ok && id === 'c1_email') ok = validEmail(val);
+    if (ok && id === 'c1_phone') ok = validPhone(val);
+    ok ? clearErr(el, errEl) : markErr(el, errEl, errEl ? errEl.textContent : '');
+  });
+});
+
+// ── PHONE FORMATTER ──
+document.getElementById('c1_phone').addEventListener('input', function() {
+  let v = this.value.replace(/\D/g, '');
+  if (v.length >= 10) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6,10);
+  this.value = v;
+});
 </script>
 
 </body>
